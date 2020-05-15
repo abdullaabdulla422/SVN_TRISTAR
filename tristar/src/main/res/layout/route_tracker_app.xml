@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ph_logo"
+    android:orientation="vertical"
+    tools:ignore="Overdraw">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/whitecolor"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp" >
+
+        <ImageView
+            android:id="@+id/imageButtonback"
+            android:layout_width="20dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center|left"
+            android:src="@drawable/imagesleft"
+            tools:ignore="ContentDescription,RtlHardcoded" />
+
+        <TextView
+            android:id="@+id/txt_backrouter"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center|left"
+            android:text="@string/back"
+            android:textColor="@color/blackcolor"
+            android:textSize="18sp"
+            tools:ignore="RtlHardcoded" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/actionbar_route_tracker"
+            android:textColor="@color/blackcolor"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="60dp"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="0.76"
+                android:text="@string/type_route"
+                android:textColor="@color/whitecolor"
+                android:textSize="16sp"
+                tools:ignore="RtlHardcoded" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.24" >
+
+                <Spinner
+                    android:id="@+id/spinner_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/roundedcorner"
+                    android:padding="3dp"
+                    android:textColor="@color/blackcolor"
+                    android:textSize="16sp"
+                    tools:ignore="RtlHardcoded" />
+
+                <ImageView
+                    android:id="@+id/select_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_gravity="end|center"
+                    android:paddingBottom="7dp"
+                    android:paddingLeft="7dp"
+                    android:paddingTop="7dp"
+                    android:src="@drawable/turn_triangle"
+                    tools:ignore="ContentDescription,RtlHardcoded,RtlSymmetry" />
+            </FrameLayout>
+        </LinearLayout>
+
+       <!--  <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/darker_gray" />  -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="0.76"
+                android:text="@string/status_route"
+                android:textColor="@color/whitecolor"
+                android:textSize="16sp"
+                tools:ignore="RtlHardcoded" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.24" >
+
+                <Spinner
+                    android:id="@+id/spinner_status"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="0.24"
+                    android:background="@drawable/roundedcorner"
+                    android:padding="3dp"
+                    android:textColor="@color/blackcolor"
+                    android:textSize="16sp"
+                    tools:ignore="ObsoleteLayoutParam,RtlHardcoded" />
+
+                <ImageView
+                    android:id="@+id/select_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_gravity="end|center"
+                    android:paddingBottom="7dp"
+                    android:paddingLeft="7dp"
+                    android:paddingTop="7dp"
+                    android:src="@drawable/turn_triangle"
+                    tools:ignore="ContentDescription,RtlHardcoded,RtlSymmetry" />
+            </FrameLayout>
+        </LinearLayout>
+
+       <!--  <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/darker_gray" />  -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="1" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="0.76"
+                android:text="@string/location_route"
+                android:textColor="@color/whitecolor"
+                android:textSize="16sp"
+                tools:ignore="RtlHardcoded" />
+
+            <EditText
+                android:id="@+id/edt_location"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="0.24"
+                android:background="@drawable/roundedcorner"
+                android:focusableInTouchMode="true"
+                android:imeOptions="actionNext"
+                android:padding="3dp"
+                android:singleLine="true"
+                android:textColor="@color/blackcolor"
+                android:textSize="16sp"
+                tools:ignore="RtlHardcoded,TextFields" />
+
+           <!--  <Button
+                android:id="@+id/btn_scan_location"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_weight="0.4"
+                android:background="@drawable/button_corner"
+                android:text="@string/scan_route"
+                android:textColor="@color/blackcolor"
+                android:textSize="18sp"
+                android:textStyle="bold" />  -->
+        </LinearLayout>
+
+      <!--   <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/darker_gray" />  -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="1" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="0.76"
+                android:text="@string/jobs_route"
+                android:textColor="@color/whitecolor"
+                android:textSize="16sp"
+                tools:ignore="RtlHardcoded" />
+
+            <EditText
+                android:id="@+id/edt_scan"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="0.24"
+                android:background="@drawable/roundedcorner"
+                android:focusableInTouchMode="true"
+                android:gravity="top"
+                android:imeOptions="actionNext"
+                android:padding="3dp"
+                android:textColor="@color/blackcolor"
+                android:textSize="16sp"
+                tools:ignore="RtlHardcoded,TextFields" />
+
+          <!--   <Button
+                android:id="@+id/btn_scan_job"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_weight="0.4"
+                android:background="@drawable/button_corner"
+                android:text="@string/scan_route"
+                android:textColor="@color/blackcolor"
+                android:textSize="18sp"
+                android:textStyle="bold" />  -->
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@android:color/darker_gray" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+            
+            <Button
+                android:id="@+id/btn_scan_job"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button_corner"
+                android:text="@string/scan_route"
+                android:textColor="@color/blackcolor"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+            
+
+            <Button
+                android:id="@+id/btn_submit_route"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button_corner"
+                android:text="Submit"
+                android:textColor="@color/blackcolor"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
+
+            <Button
+                android:id="@+id/btncancel"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button_corner"
+                android:text="@string/cancel"
+                android:textColor="@color/blackcolor"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="300dp"
+    android:background="@color/whitecolor"
+    android:layout_height="wrap_content"
+     android:padding="5dp"
+    android:orientation="horizontal"
+    tools:ignore="Overdraw">
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+       
+        android:background="@drawable/mapview"
+        >
+        
+        <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:background="@color/blackcolor"
+        >
+    
+   
+    
+    <CheckBox 
+        
+         android:id="@+id/check_process_order"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="5dp"
+        android:visibility="gone"
+        android:layout_marginRight="5dp"
+       />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="65dp"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1" >
+ 
+            <TextView 
+                android:id="@+id/txt_udno"
+                android:layout_width="wrap_content" 
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+               
+                android:textColor="@color/whitecolor"
+                android:textSize="16sp"
+                tools:ignore="RtlHardcoded" />
+
+            <TextView
+                android:id="@+id/txtsereee"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+              
+                android:textColor="@color/whitecolor"
+                android:textSize="16sp"
+                tools:ignore="RtlHardcoded" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txt_addresslist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="20dp"
+          
+            android:textColor="@android:color/white"
+            android:textSize="14sp"
+            tools:ignore="RtlHardcoded" />
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/csdirection"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="20dp"
+        android:src="@drawable/direction"
+        tools:ignore="ContentDescription,RtlHardcoded" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="20dp"
+        android:src="@drawable/ic_navigation_next_item"
+        tools:ignore="ContentDescription,RtlHardcoded" />
+</LinearLayout>
+    </LinearLayout>
+</LinearLayout>

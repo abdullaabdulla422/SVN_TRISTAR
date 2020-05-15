@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--suppress ALL -->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.tristar.main"
+    android:installLocation="auto"
+    android:versionCode="66"
+    android:versionName="3.3.7"
+    tools:ignore="GradleOverrides">
+
+
+    <permission android:name="org.apache.http.legacy"
+        android:required="false"/>
+
+
+
+    <permission
+        android:name="com.tristar.main.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+
+    <permission
+        android:name="android.permission.INTERNET" >
+    </permission>
+
+    <uses-sdk
+
+        android:targetSdkVersion="28"
+        tools:ignore="GradleOverrides,OldTargetApi" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true"
+        />
+
+    <uses-feature android:name="android.hardware.telephony"
+        android:required="false" />
+    <uses-feature android:name="android.hardware.touchscreen"
+        android:required="false" />
+    <!-- Required for camera -->
+    <uses-permission android:name="android.permission.CAMERA"
+         />
+
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="false" />
+    <uses-feature android:name="android.hardware.camera" android:required="false" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="com.tristar.main.permission.MAPS_RECEIVE"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"  android:required="false"/>
+    <uses-permission android:name="android.permission.FLASHLIGHT"  android:required="false"
+         />
+    <!-- Required to access network -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+
+
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <!-- Required to show current location -->
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <!-- <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" /> -->
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+
+    <!-- Required for the Application process -->
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+
+    <!-- Required OpenGL ES 2.0. for Maps V2 -->
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" >
+    </permission>
+
+    <application
+        android:usesCleartextTraffic="true"
+        android:allowBackup="false"
+        android:icon="@drawable/tristarcircle"
+        android:label="@string/app_name"
+        android:logo="@color/graycolor"
+        android:theme="@android:style/Theme.NoTitleBar"
+        tools:replace="android:allowBackup"
+        tools:ignore="AllowBackup,GoogleAppIndexingWarning">
+
+        <uses-library android:name="org.apache.http.legacy" android:required="false"/>
+
+        <activity
+            android:name="com.tristar.main.Splash"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tristar.main.MainActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.tristar.main.SurfaceViewCamera"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+           >
+        </activity>
+        <activity
+            android:name="com.tristar.main.ListCategory"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/logout"
+            android:parentActivityName="com.tristar.main.MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+           >
+        </activity>
+        <activity
+            android:name="com.tristar.main.CourtService"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/logout"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name="com.tristar.main.RouteTrackerApp"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/logout"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" 
+            android:windowSoftInputMode="stateHidden">
+        </activity>
+        <activity
+            android:name="com.tristar.main.ProcessOrder"
+            android:configChanges="orientation|screenSize"
+            android:windowSoftInputMode="stateHidden"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name="com.tristar.main.CourtServiceDetail"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+        </activity>
+        <!--<activity-->
+            <!--android:name="com.tristar.main.LibraryFileIncluder"-->
+            <!--android:configChanges="orientation|screenSize"-->
+            <!--android:label="@string/app_name"-->
+            <!--android:screenOrientation="portrait"-->
+            <!--android:theme="@android:style/Theme.NoTitleBar" >-->
+        <!--</activity>-->
+        <activity
+            android:name="com.tristar.main.RawFileIncluder"
+            android:label="@string/app_name"
+
+            android:theme="@style/Theme.Transparent" >
+        </activity>
+        <activity
+            android:name="com.tristar.main.CourtPOD"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustPan" >
+        </activity>
+        <activity
+            android:name="com.tristar.adapters.DiligenceHolo"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Transparent" >
+        </activity>
+        <!--<activity-->
+            <!--android:name="com.tristar.main.camera"-->
+            <!--android:label="@string/app_name"-->
+            <!--android:screenOrientation="portrait" >-->
+        <!--</activity>-->
+        <activity
+            android:name="com.tristar.main.SelectLib"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.tristar.main.JobsQueue"
+            android:label="@string/edit"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name="com.tristar.voicerecorder.VoiceRecorder"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+        </activity>
+        <!--<activity-->
+            <!--android:name="com.tristar.geo.mapview.MapviewSetup"-->
+            <!--android:label="@string/map_standard"-->
+            <!--android:screenOrientation="portrait" >-->
+        <!--</activity>-->
+        <activity
+            android:name="com.tristar.main.FinalStatus"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            >
+        </activity>
+        <activity
+            android:name="com.tristar.main.ProcessOrderDetail"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="stateHidden"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name="com.tristar.main.RecordDiligence"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.tristar.main.History"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+
+        <activity
+            android:name="com.tristar.main.NotificationActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+
+        <activity
+            android:name="com.tristar.main.HistoryDetails"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+
+        <activity
+            android:name="com.tristar.signature.CaptureActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name="com.tristar.main.DeliveryServiceDetail"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name="com.tristar.main.DeliveryPOD"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            >
+        </activity>
+        <activity
+            android:name="com.tristar.main.BaseFileIncluder"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name="com.tristar.main.PreviousDiligence"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+        </activity>
+
+
+        <activity
+            android:name="com.tristar.main.AddressOptions"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Transparent" >
+        </activity>
+        <activity
+            android:name="com.tristar.main.DisplayActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name="com.tristar.main.AddActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name="com.tristar.main.ProcessOrderAddAddress"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name="com.tristar.signature.Capture"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+        </activity>
+
+        <!-- Goolge API Key -->
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyDS0c6Ryu-1V7rq27jNlx06Efik53VpcoI" />
+        <!-- Production key : android:value="AIzaSyAHSojZnLo1QMdgTbSf6f18arHqvKOuxHE" -->
+        <!-- Development key: AIzaSyA0lSHtdipihfiwAyOKMGi-obNc3QXIvzM -->
+        <!--AIzaSyAnltbZSvKvkq7a2IynEB3VYnoUQivo0nc-->
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" >
+        </meta-data>
+
+        <!--<activity-->
+            <!--android:name="com.tristar.main.PickupPOD"-->
+            <!--android:label="@string/title_activity_pickup_pod" >-->
+        <!--</activity>-->
+        <activity
+            android:name="com.tristar.main.Exiter"
+            android:label="@string/title_activity_exiter" >
+        </activity>
+        <activity
+            android:name="com.tristar.main.ViewPdf"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name="com.tristar.main.AddAddress"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name="com.tristar.main.AddAddressRecordDiligence"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+        </activity>
+         <!--<activity-->
+            <!--android:name="com.tristar.main.BarcodeReader"-->
+            <!--android:screenOrientation="landscape" >-->
+        <!--</activity>-->
+         <!--<activity
+            android:name="com.dm.zbar.android.scanner.ZBarScannerActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.google.zxing.client.android.SCAN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>-->
+
+        <activity android:name="com.tristar.utils.SimpleScannerActivity"
+            android:theme="@style/AppOverlayTheme"
+            android:label="@string/scanner_activity"
+            >
+        </activity>
+       
+        
+    </application>
+
+</manifest>

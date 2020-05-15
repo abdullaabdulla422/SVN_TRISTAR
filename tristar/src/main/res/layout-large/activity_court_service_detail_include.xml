@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/transparent"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/blackcolor"
+        android:orientation="horizontal"
+        android:paddingRight="20dp"
+        android:paddingBottom="5dp"
+        android:paddingLeft="20dp"
+        android:paddingTop="5dp"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_weight="0.65"
+            android:text="@string/court_service_doc"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/whitecolor"
+            android:textSize="16sp"
+            tools:ignore="ObsoleteLayoutParam,RtlHardcoded,RtlSymmetry" />
+
+        <TextView
+            android:id="@+id/txt_documents"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.35"
+            android:text="@string/court_service_docval"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/whitecolor"
+            android:textSize="15sp"
+            tools:ignore="RtlHardcoded,RtlSymmetry" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/darker_gray" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/blackcolor"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp"
+        android:paddingRight="20dp"
+        android:paddingLeft="20dp"
+        android:paddingTop="5dp"
+        android:weightSum="1">
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_weight="0.65"
+            android:text="Case Name"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/whitecolor"
+            android:textSize="16sp"
+            tools:ignore="HardcodedText,ObsoleteLayoutParam,RtlHardcoded,RtlSymmetry" />
+
+        <TextView
+            android:id="@+id/txt_casename"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.35"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/whitecolor"
+            android:textSize="15sp"
+            tools:ignore="RtlHardcoded,RtlSymmetry" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/darker_gray" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/blackcolor"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp"
+        android:paddingRight="20dp"
+        android:paddingLeft="20dp"
+        android:paddingTop="5dp"
+        android:weightSum="1">
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_weight="0.65"
+            android:text="Case Number"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/whitecolor"
+            android:textSize="16sp"
+            tools:ignore="HardcodedText,ObsoleteLayoutParam,RtlHardcoded,RtlSymmetry" />
+
+        <TextView
+            android:id="@+id/txt_casenumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.35"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/whitecolor"
+            android:textSize="15sp"
+            tools:ignore="RtlHardcoded,RtlSymmetry" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/darker_gray" />
+
+    <!--<Button
+        android:id="@+id/btnStatus"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/button_corner"
+        android:text="Submit Status"
+        android:textColor="@color/blackcolor"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText" />-->
+
+    <Button
+        android:id="@+id/btn_attachment"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_corner"
+        android:text="View PDF"
+        android:textColor="@color/blackcolor"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btn_history"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_corner"
+        android:text="History"
+        android:textColor="@color/blackcolor"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_corner"
+        android:text="@string/court_service_btn"
+        android:textColor="@color/blackcolor"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+</LinearLayout>

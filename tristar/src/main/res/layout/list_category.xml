@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ph_logo"
+    android:weightSum="1"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/whitecolor"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="10dp" >
+           <ImageView
+            android:id="@+id/imageButtonbackpro"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|left"
+            android:background="@android:color/white"
+            android:src="@drawable/imagesleft"
+               tools:ignore="ContentDescription,RtlHardcoded" />
+        
+
+        <TextView
+            android:id="@+id/txt_logout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center|left"
+            android:text="@string/logout"
+            android:textColor="@color/blackcolor"
+            android:textSize="16sp"
+            tools:ignore="RtlHardcoded" />
+       
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="5"
+            android:gravity="center"
+            android:text="@string/category"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txt_sync"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center|right"
+            android:text="@string/sync"
+            android:textColor="@color/blackcolor"
+            android:textSize="16sp"
+            tools:ignore="RtlHardcoded" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:paddingLeft="40dp"
+        android:id="@+id/notifications"
+        android:weightSum="1"
+        android:background="@color/blackcolor"
+        android:visibility="gone"
+        android:gravity="center"
+        android:orientation="horizontal"
+        tools:ignore="RtlHardcoded,RtlSymmetry">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            tools:ignore="InefficientWeight">
+
+        <TextView
+            android:id="@+id/txt_notifications"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="Notifications"
+            android:gravity="center_vertical"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/whitecolor"
+            android:textSize="15sp"
+            android:textStyle="normal"
+            tools:ignore="HardcodedText,ObsoleteLayoutParam,RtlHardcoded" />
+        <TextView
+            android:id="@+id/txt_notificationsitems"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="No Notifications Found"
+            android:gravity="center_vertical"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/whitecolor"
+            android:textSize="13sp"
+            android:textStyle="normal"
+            tools:ignore="HardcodedText,ObsoleteLayoutParam,RtlHardcoded" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/txt_Category"
+            android:src="@drawable/ic_navigation_next_item"
+            tools:ignore="ContentDescription,ObsoleteLayoutParam,RtlHardcoded" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height=".25dp"
+        android:layout_marginLeft="35dp"
+        android:background="#252525"
+        tools:ignore="RtlHardcoded" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_marginLeft="30dp"
+        tools:ignore="RtlHardcoded">
+
+        <ListView
+            android:visibility="visible"
+            android:id="@+id/listView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:ignore="InefficientWeight,RtlHardcoded"
+
+            >
+        </ListView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height=".25dp"
+            android:background="#252525"
+            tools:ignore="RtlHardcoded" />
+
+        <RelativeLayout
+            android:visibility="gone"
+            android:id="@+id/bottom_checkbox"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            tools:ignore="NestedWeights,RtlHardcoded"
+            android:layout_marginTop="18dp"
+            >
+
+            <TextView
+                android:id="@+id/txt_sp_d"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="15dp"
+                android:text="@string/dilispread"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/whitecolor"
+                android:textSize="14sp"
+                android:textStyle="normal"
+                tools:ignore="ObsoleteLayoutParam,RtlHardcoded"
+                android:gravity="center_vertical"
+                />
+
+            <CheckBox
+                android:id="@+id/Checkbox_diligence"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/txt_sp_d"
+                tools:ignore="ContentDescription,ObsoleteLayoutParam,RtlHardcoded"
+                android:theme="@style/MyCheckbox"
+                android:scaleX="0.70"
+                android:scaleY="0.70"
+                />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+
+
+
+    <Button
+        android:id="@+id/btn_scan_job"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="35dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button_corner"
+        android:text="Scan Jobs"
+        android:textColor="@color/blackcolor"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText" />
+
+
+</LinearLayout>

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--suppress ALL -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@drawable/dialog_box"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/whitecolor">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginBottom="2dp"
+        android:orientation="horizontal"
+        android:background="@color/blackcolor"
+        android:weightSum="10" >
+
+        <TextView
+            android:id="@+id/txt_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/whitecolor"
+            android:textSize="18dp"
+            android:text="select"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:layout_weight="10"
+            android:layout_marginLeft="40dp"
+            tools:ignore="HardcodedText,InefficientWeight,RtlHardcoded,SpUsage" />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/btn_close"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:background="@drawable/close"
+            android:layout_marginRight="10dp"
+            tools:ignore="ContentDescription,RtlHardcoded" />
+
+        <!--<ImageView
+            android:id="@+id/cancel"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_weight="0.2"
+            android:src="@drawable/cancel"
+            android:layout_marginRight="5dp"
+            android:layout_gravity="end|center"/>-->
+    </LinearLayout>
+    <!--<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:background="@drawable/side_corner">
+        <ImageView
+            android:id="@+id/search_icon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/search_icon"
+            android:layout_marginLeft="5dp">
+        </ImageView>
+    <AutoCompleteTextView
+        android:id="@+id/search_box"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:dropDownWidth="wrap_content"
+        android:inputType="textAutoComplete|textAutoCorrect"
+        android:popupBackground="@color/white"
+        android:textColor="#FFFFFF"
+        android:hint="Search"
+        android:gravity="left|center"
+        android:ems="10"
+
+        >
+    </AutoCompleteTextView>
+    </LinearLayout>-->
+
+
+
+
+
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        android:layout_weight="1"
+
+        android:choiceMode="singleChoice"
+
+        android:dividerHeight="1.5dp"
+        tools:ignore="InefficientWeight">
+
+    </ListView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        >
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1.5dp"
+            android:background="@color/blackcolor"
+            android:layout_marginBottom="10dp"
+
+            />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/whitecolor"
+    android:layout_gravity="center"
+    android:gravity="center">
+<Button
+    android:layout_width="100dp"
+    android:layout_height="40dp"
+    android:id="@+id/save"
+    android:background="@color/blackcolor"
+    android:textSize="14dp"
+    android:text="Save"
+    android:textColor="@color/whitecolor"
+    android:textStyle="bold"
+    android:layout_marginBottom="10dp"
+    tools:ignore="HardcodedText,SpUsage" />
+</LinearLayout>
+
+
+    </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

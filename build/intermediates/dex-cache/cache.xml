@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/home/cbe-teclwsp-012/sarath/TriStar/tristar/libs/listviewanimations_lib-manipulation_3.1.0.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="63737e512fcd9e0ebe9bcd0bb375c2dded74116f">
+        <dex dex="/home/cbe-teclwsp-012/sarath/TriStar/tristar/build/intermediates/transforms/dex/debug/folders/1000/2/listviewanimations_lib-manipulation_3.1.0_b9ac0088d82b6697edba9205688802e656caaf70/classes.dex" />
+    </item>
+    <item
+        jar="/home/cbe-teclwsp-012/sarath/TriStar/tristar/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.1/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="e4d0cbb0b999604b349062f0214a0a228a7fd151">
+        <dex dex="/home/cbe-teclwsp-012/sarath/TriStar/tristar/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-23.2.1_6473853f445d61eda5ef468fa6983966e3999614/classes.dex" />
+    </item>
+    <item
+        jar="/home/cbe-teclwsp-012/sarath/TriStar/tristar/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/23.1.1/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="09c5e804bc67fc0580360043dff067df574a60d4">
+        <dex dex="/home/cbe-teclwsp-012/sarath/TriStar/tristar/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-recyclerview-v7-23.1.1_8a89e82e067065678d79992cb1c14b0e93455228/classes.dex" />
+    </item>
+    <item
+        jar="/home/cbe-teclwsp-012/sarath/TriStar/tristar/build/intermediates/exploded-aar/TriStar/zBarScannerActivity/unspecified/jars/libs/zbar.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="39a94dbfe6e0f81cabd530a774f00dcca3e03be8">
+        <dex dex="/home/cbe-teclwsp-012/sarath/TriStar/tristar/build/intermediates/transforms/dex/debug/folders/1000/8/zbar_c858b6d1968c07529be89560d7709d4d568d8ebf/classes.dex" />
+    </item>
+    <item
+        jar="/home/cbe-teclwsp-012/sarath/TriStar/tristar/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="a69169478aed02648a6fdaeefefad592b6b9d7fb">
+        <dex dex="/home/cbe-teclwsp-012/sarath/TriStar/tristar/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_5dfbae54c4269d40e4bc5acf64584b3db9b7b0b2/classes.dex" />
+    </item>
+    <item
+        jar="/home/cbe-teclwsp-012/sarath/TriStar/tristar/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.2.1/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="673d77a5bbddd766037f088e775df525c46407f0">
+        <dex dex="/home/cbe-teclwsp-012/sarath/TriStar/tristar/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-vector-drawable-23.2.1_fed9f5020838c647d19679028a4797a55b9c0462/classes.dex" />
+    </item>
+    <item
+        jar="/home/cbe-teclwsp-012/sarath/TriStar/tristar/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/7.3.0/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="fe3e0c6de7cceed888b277487238b6af9a1cc299">
+        <dex dex="/home/cbe-teclwsp-012/sarath/TriStar/tristar/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-maps-7.3.0_f2636b8a64f02f399d82eab46fbb2a26d2061c25/classes.dex" />
+    </item>
+    <item
+        jar="/home/cbe-teclwsp-012/sarath/TriStar/tristar/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/23.2.1/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="3469cb457f10f74c28cbc05f069b6c894f6cbdd0">
+        <dex dex="/home/cbe-teclwsp-012/sarath/TriStar/tristar/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-animated-vector-drawable-23.2.1_ab494fd3d99ba2d1e32a41af9cf8976f8361a3cc/classes.dex" />
+    </item>
+    <item
+        jar="/home/cbe-teclwsp-012/sarath/TriStar/tristar/libs/httpclient-4.2.3.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="6a91a27c5c07e9da44eeddbc4206e349735b26f4">
+        <dex dex="/home/cbe-teclwsp-012/sarath/TriStar/tristar/build/intermediates/transforms/dex/debug/folders/1000/2/httpclient-4.2.3_915b687f40727b9d367a78d837d630c39d564b1c/classes.dex" />
+    </item>
+    <item
+        jar="/home/cbe-teclwsp-012/sarath/TriStar/tristar/build/intermediates/exploded-aar/com.android.support/support-v4/23.2.1/jars/libs/internal_impl-23.2.1.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="607a3d0b8013b4ccbfeb0b7cb293351994e021fb">
+        <dex dex="/home/cbe-teclwsp-012/sarath/TriStar/tristar/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-23.2.1_b230c245587745a073cfe50ef19dd547d068b349/classes.dex" />
+    </item>
+    <item
+        jar="/home/cbe-teclwsp-012/sarath/TriStar/tristar/libs/listviewanimations_lib-core-slh_3.1.0.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="a4fe703aabd23e8c287c90396514418119109dd1">
+        <dex dex="/home/cbe-teclwsp-012/sarath/TriStar/tristar/build/intermediates/transforms/dex/debug/folders/1000/2/listviewanimations_lib-core-slh_3.1.0_9ab47c44cf2fe835252f25f88f44d0e83b90d152/classes.dex" />
+    </item>
+    <item
+        jar="/home/cbe-teclwsp-012/sarath/TriStar/tristar/libs/http-core-4.1.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="1bf8391d59bf37ddf2aa51aa90467afd0388bc2c">
+        <dex dex="/home/cbe-teclwsp-012/sarath/TriStar/tristar/build/intermediates/transforms/dex/debug/folders/1000/2/http-core-4.1_5b14cf729fe42a01f05ce8d3e4594ec02270199a/classes.dex" />
+    </item>
+    <item
+        jar="/home/cbe-teclwsp-012/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/23.2.1/support-annotations-23.2.1.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="ccb693bc0774fcb637246f7360de25b4af7df318">
+        <dex dex="/home/cbe-teclwsp-012/sarath/TriStar/tristar/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-23.2.1_4c7e3ccaff25702c6d20db71c596213e66c99248/classes.dex" />
+    </item>
+    <item
+        jar="/home/cbe-teclwsp-012/sarath/TriStar/tristar/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="13955bd2853af9155218d3697c07264afad57551">
+        <dex dex="/home/cbe-teclwsp-012/sarath/TriStar/tristar/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_2bdac92e9b3ae189fc3a988c31a236e7effbd3a5/classes.dex" />
+    </item>
+    <item
+        jar="/home/cbe-teclwsp-012/sarath/TriStar/tristar/libs/ksoap2-android-assembly-3.1.1-jar-with-dependencies.1.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="ddcd1698b4bc242e26bfd99e3779688ab311b918">
+        <dex dex="/home/cbe-teclwsp-012/sarath/TriStar/tristar/build/intermediates/transforms/dex/debug/folders/1000/2/ksoap2-android-assembly-3.1.1-jar-with-dependencies.1_bbb805b6a00058d56a2e7e350e53c06ad3810fc4/classes.dex" />
+    </item>
+    <item
+        jar="/home/cbe-teclwsp-012/sarath/TriStar/tristar/build/intermediates/exploded-aar/com.android.support/design/23.1.1/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="379471b2bd17d9737c050345c08e8c7d16589784">
+        <dex dex="/home/cbe-teclwsp-012/sarath/TriStar/tristar/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-design-23.1.1_be9464089acc6a42cfa0233cc092606f4abd6a6a/classes.dex" />
+    </item>
+    <item
+        jar="/home/cbe-teclwsp-012/sarath/TriStar/tristar/libs/listviewanimations_lib-core_3.1.0.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="f3f9629b068554d8513a2aaf34418171bf430851">
+        <dex dex="/home/cbe-teclwsp-012/sarath/TriStar/tristar/build/intermediates/transforms/dex/debug/folders/1000/2/listviewanimations_lib-core_3.1.0_27164c7035a8ceee512b667debe1f6d4c2caae13/classes.dex" />
+    </item>
+    <item
+        jar="/home/cbe-teclwsp-012/sarath/TriStar/tristar/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.3.0/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="f2f7ec211ce4d244ee97a57523eeb4526dc3cf8a">
+        <dex dex="/home/cbe-teclwsp-012/sarath/TriStar/tristar/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-base-7.3.0_69fd6368416790422129fb7df2736c6013da7350/classes.dex" />
+    </item>
+    <item
+        jar="/home/cbe-teclwsp-012/sarath/TriStar/tristar/build/intermediates/exploded-aar/com.android.support/multidex/1.0.1/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="78ea232052df889856dcb7b7b542707c89bb3bfb">
+        <dex dex="/home/cbe-teclwsp-012/sarath/TriStar/tristar/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-multidex-1.0.1_e9bfa0f2f106c5e053d7f4bb4f190c8cf56300d8/classes.dex" />
+    </item>
+    <item
+        jar="/home/cbe-teclwsp-012/sarath/TriStar/tristar/build/intermediates/exploded-aar/com.android.support/support-v4/23.2.1/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="3be474b1b21b31cf2fa93fe6bd641ae108d96452">
+        <dex dex="/home/cbe-teclwsp-012/sarath/TriStar/tristar/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-23.2.1_5001128a2739672f511f339cb3636541a0099a43/classes.dex" />
+    </item>
+
+</items>

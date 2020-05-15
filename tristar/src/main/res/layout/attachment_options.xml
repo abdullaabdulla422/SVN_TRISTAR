@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--suppress ALL -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   
+    android:orientation="vertical" >
+    <LinearLayout
+        android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:gravity="bottom|center_horizontal"
+    android:visibility="visible"
+    android:orientation="vertical"
+        >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:gravity="bottom"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/button1_search"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/button_corner"
+            android:text="@string/edit_search_library"
+            android:textColor="@color/blackcolor"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="8dp"
+            android:background="@android:color/transparent" />
+
+        <Button
+            android:id="@+id/button2_take_picture"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/button_corner"
+            android:text="@string/edit_takepic"
+            android:textColor="@color/blackcolor"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="8dp"
+        android:background="@android:color/transparent" />
+
+    <Button
+        android:id="@+id/button3_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/button_corner"
+        android:text="@string/cancel"
+        android:textColor="@color/blackcolor"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:visibility="gone"
+    
+        >
+        
+        <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        
+        >
+     
+        <LinearLayout 
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:orientation="horizontal"
+             android:weightSum="2"
+            >
+            
+            <LinearLayout 
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:orientation="horizontal"
+            
+            android:layout_weight="1"
+            >
+            <TextView 
+                 android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="Order #:"
+             android:textColor="@android:color/black"
+
+                tools:ignore="HardcodedText" />
+            <TextView 
+                 android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             
+             
+                />
+            
+        </LinearLayout>
+        <LinearLayout 
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:orientation="horizontal"
+             android:layout_weight="1"
+            >
+             <TextView 
+                 android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="Latitude:"
+             android:textColor="@android:color/black"
+
+                 tools:ignore="HardcodedText" />
+            <TextView 
+                 android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             
+             
+                />
+            
+        </LinearLayout>
+        </LinearLayout>
+        <LinearLayout 
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:orientation="horizontal"
+             android:weightSum="2"
+            >
+            
+            <LinearLayout 
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:orientation="horizontal"
+            
+            android:layout_weight="1"
+            >
+            <TextView 
+                 android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="Date :"
+             android:textColor="@android:color/black"
+
+                tools:ignore="HardcodedText" />
+            <TextView 
+                 android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             
+             
+                />
+            
+        </LinearLayout>
+        <LinearLayout 
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:orientation="horizontal"
+             android:layout_weight="1"
+            >
+             <TextView 
+                 android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="Longitude : "
+             android:textColor="@android:color/black"
+
+                 tools:ignore="HardcodedText" />
+            <TextView 
+                 android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             
+             
+                />
+            
+        </LinearLayout>
+        </LinearLayout>
+        
+    </LinearLayout>
+
+    <SurfaceView
+        android:id="@+id/surfaceView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:gravity="center"
+        android:onClick="captureImage"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Capture"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            tools:ignore="HardcodedText" />
+    </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

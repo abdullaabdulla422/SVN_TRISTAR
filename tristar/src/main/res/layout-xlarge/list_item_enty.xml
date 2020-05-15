@@ -1,0 +1,167 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/Layout_Court_Delivery_jobs"
+    android:orientation="horizontal" >
+    <LinearLayout
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_margin="5dp"
+        >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:src="@drawable/attach_white"
+            android:id="@+id/img_attach"
+            tools:ignore="ContentDescription" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
+            <TextView
+                android:id="@+id/list_item_entry_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="c"
+                android:singleLine="true"
+                android:layout_weight="0.25"
+                android:gravity="start"
+                android:textColor="@android:color/white"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText,RtlHardcoded" />
+
+            <TextView
+                android:id="@+id/list_item_receive_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="05/05/2017"
+                android:singleLine="true"
+                android:gravity="center"
+                android:layout_weight="0.75"
+                android:textColor="@android:color/white"
+                android:textSize="14sp"
+                tools:ignore="HardcodedText,RtlHardcoded" />
+
+        </LinearLayout>
+
+
+        <!--<TextView
+            android:id="@+id/list_item_entry_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text=""
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:visibility="visible"
+            tools:ignore="HardcodedText,RtlHardcoded" />-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                >
+
+                <TextView
+                    android:id="@+id/list_item_entry_summary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="50dp"
+                    android:gravity="start"
+                    android:maxLines="2"
+                    android:singleLine="true"
+                    android:text="bvc"
+                    android:textColor="@android:color/white"
+                    android:textSize="13sp"
+                    tools:ignore="HardcodedText,RtlHardcoded" />
+
+                <TextView
+                    android:id="@+id/list_item_entry_summary2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="50dp"
+                    android:textSize="13sp"
+                    android:maxLines="2"
+                    android:singleLine="true"
+                    android:gravity="start"
+                    android:text="bvc"
+                    android:textColor="@android:color/white"
+                    tools:ignore="HardcodedText,RtlHardcoded" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:gravity="center"
+                tools:ignore="RtlHardcoded"
+                android:orientation="vertical"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginBottom="2dp"
+                >
+
+                <TextView
+                    android:id="@+id/list_item_priority"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:gravity="center|left"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="@android:color/white"
+                    android:textSize="14sp"
+                    tools:ignore="HardcodedText,RtlHardcoded" />
+
+                <TextView
+                    android:id="@+id/list_item_currrent_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:text="Active"
+                    android:singleLine="true"
+                    android:gravity="center|left"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="@android:color/white"
+                    android:textSize="14sp"
+                    tools:ignore="HardcodedText,RtlHardcoded" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/img_forward"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_navigation_next_item"
+        tools:ignore="ContentDescription" />
+
+</LinearLayout>

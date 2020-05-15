@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/SVN_TRISTAR_2019-04-25.iml" filepath="$PROJECT_DIR$/SVN_TRISTAR_2019-04-25.iml" group="SVN_TRISTAR_2019-04-25" />
+      <module fileurl="file://$PROJECT_DIR$/sanselanAndroid/sanselanAndroid.iml" filepath="$PROJECT_DIR$/sanselanAndroid/sanselanAndroid.iml" group="SVN_TRISTAR_2019-04-25/sanselanAndroid" />
+      <module fileurl="file://$PROJECT_DIR$/tristar/tristar.iml" filepath="$PROJECT_DIR$/tristar/tristar.iml" group="SVN_TRISTAR_2019-04-25/tristar" />
+      <module fileurl="file://$PROJECT_DIR$/zbar/zbar.iml" filepath="$PROJECT_DIR$/zbar/zbar.iml" group="SVN_TRISTAR_2019-04-25/zbar" />
+    </modules>
+  </component>
+</project>

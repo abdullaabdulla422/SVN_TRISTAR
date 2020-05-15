@@ -1,0 +1,35 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        >
+
+        <TextView
+            android:id="@+id/txt_workorder_job"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dp"
+            android:textColor="@color/whitecolor"
+            android:textSize="18sp"
+            tools:ignore="RtlHardcoded,RtlSymmetry" />
+
+        <Button
+            android:id="@+id/btn_job_minus"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            
+            android:background="@drawable/ic_navigation_next_item"
+            android:visibility="visible" />
+    </LinearLayout>
+
+</RelativeLayout>

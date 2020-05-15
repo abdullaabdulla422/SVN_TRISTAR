@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+     >
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/tab_bar_background" >
+
+        <LinearLayout
+            android:id="@+id/tab_category"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:background="@color/blackcolor"
+            android:orientation="vertical" >
+
+            <ImageButton
+                android:id="@+id/imageBtn_category"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@drawable/tri_category"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:id="@+id/lbl_category"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/category"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@android:color/white"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/tab_court"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:background="@color/blackcolor"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageButton
+                android:id="@+id/imageBtn_self"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@drawable/tri_processorders"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:id="@+id/lbl_courtservice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/court_service"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@android:color/white"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/tab_map"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:background="@color/blackcolor"
+            android:orientation="vertical" >
+
+            <ImageButton
+                android:id="@+id/imageBtn_mapView"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@drawable/tri_mapview"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:id="@+id/lbl_mapview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/map_view"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@android:color/white"
+                android:textSize="13sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/tab_distance"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:visibility="gone"
+            android:gravity="center"
+            android:background="@color/blackcolor"
+            android:orientation="vertical" >
+
+            <ImageButton
+                android:id="@+id/imageBtn_direction"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@drawable/direction"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:id="@+id/lbl_direction"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/direction"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@android:color/white"
+                android:textSize="13sp" />
+        </LinearLayout>
+    </TableRow>
+
+</merge>

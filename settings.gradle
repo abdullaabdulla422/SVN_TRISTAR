@@ -1,0 +1,2 @@
+include ':tristar', ':zbar'
+include ':sanselanAndroid'

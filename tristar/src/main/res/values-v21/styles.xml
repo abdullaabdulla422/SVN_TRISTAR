@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="DialogTheme" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorAccent">@color/accent</item>
+        <item name="colorControlNormal">@color/btn_gray</item>
+        <item name="android:positiveButtonText">@string/select</item>
+        <item name="android:negativeButtonText">@string/cancel</item>
+        <item name="android:datePickerMode">spinner</item>
+    </style>
+
+    <style name="CustomDatePickerDialogTheme" parent="android:Theme.Material.Light.Dialog">
+        <item name="android:datePickerStyle">@style/MyDatePickerStyle</item>
+    </style>
+
+    <style name="MyDatePickerStyle" parent="@android:style/Widget.Material.TimePicker">
+        <item name="android:datePickerMode">spinner</item>
+    </style>
+</resources>

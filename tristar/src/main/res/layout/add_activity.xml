@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="10"
+    android:background="@drawable/ph_logo"
+    android:orientation="vertical"
+    tools:ignore="Overdraw">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/whitecolor"
+        android:orientation="vertical" 
+        android:padding="4dp" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/whitecolor"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Add Profile" 
+            android:textColor="@color/blackcolor"
+            android:textSize="18sp"
+            android:textStyle="bold|normal"
+            tools:ignore="HardcodedText" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_weight="10"
+        android:orientation="vertical"
+        tools:ignore="InefficientWeight">
+
+        <!--
+             <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:orientation="vertical" >
+        -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:orientation="vertical"
+            android:weightSum="15"
+            tools:ignore="UselessParent">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+                android:layout_weight="5"
+                android:background="@color/whitecolor" >
+
+                <EditText
+                    android:id="@+id/edt_companynewname"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/roundedcorner"
+                    android:hint="Company Name"
+                    android:paddingLeft="10dp"
+                    android:singleLine="true"
+                    tools:ignore="HardcodedText,RtlHardcoded,RtlSymmetry" />
+
+                <ImageView
+                    android:id="@+id/clear_companyname"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="right|center"
+                    android:layout_margin="5dp"
+                    android:background="@color/whitecolor"
+                    android:contentDescription="@string/cancel"
+                    android:src="@drawable/canceldet"
+                    tools:ignore="RtlHardcoded" />
+            </FrameLayout>
+            <!-- </LinearLayout> -->
+
+
+            <!--
+             <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical" >
+            -->
+ <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+                android:layout_weight="5"
+                android:background="@color/whitecolor" >
+
+                <EditText
+                    android:id="@+id/edt_companyname"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/roundedcorner"
+                    android:hint="Company Code"
+                    android:paddingLeft="10dp"
+                    android:singleLine="true"
+                    tools:ignore="HardcodedText,RtlHardcoded,RtlSymmetry" />
+
+                <ImageView
+                    android:id="@+id/clear_companynamedup"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="right|center"
+                    android:layout_margin="5dp"
+                    android:background="@color/whitecolor"
+                    android:contentDescription="@string/cancel"
+                    android:src="@drawable/canceldet"
+                    tools:ignore="RtlHardcoded" />
+            </FrameLayout>
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+                android:layout_weight="5"
+                android:background="@color/whitecolor" >
+
+                <EditText
+                    android:id="@+id/edt_username"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/roundedcorner"
+                    android:hint="User ID"
+                    android:paddingLeft="10dp"
+                    android:singleLine="true"
+                    tools:ignore="HardcodedText,RtlHardcoded,RtlSymmetry" />
+
+                <ImageView
+                    android:id="@+id/clear_adduserid"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="right|center"
+                    android:layout_margin="5dp"
+                    android:background="@color/whitecolor"
+                    android:contentDescription="@string/cancel"
+                    android:src="@drawable/canceldet"
+                    tools:ignore="RtlHardcoded" />
+            </FrameLayout>
+            <!-- </LinearLayout> -->
+
+
+            <!--
+             <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical" >
+            -->
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+                android:layout_weight="5"
+                android:background="@color/whitecolor" >
+
+                <EditText
+                    android:id="@+id/edt_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/roundedcorner"
+                    android:hint="Password"
+                     android:inputType="textPassword"
+                    android:paddingLeft="10dp"
+                    android:singleLine="true"
+                    tools:ignore="HardcodedText,RtlHardcoded,RtlSymmetry" />
+
+                <ImageView
+                    android:id="@+id/clear_addpassword"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="right|center"
+                    android:layout_margin="5dp"
+                    android:background="@color/whitecolor"
+                    android:contentDescription="@string/cancel"
+                    android:src="@drawable/canceldet"
+                    tools:ignore="RtlHardcoded" />
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:orientation="horizontal"
+        android:weightSum="10" >
+
+        <Button
+            android:id="@+id/add"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="5"
+            android:background="@drawable/button_corner"
+            android:text="Add"
+            android:textColor="@color/blackcolor"
+            android:textStyle="bold"
+            tools:ignore="ButtonStyle,HardcodedText,RtlHardcoded" />
+
+        <Button
+            android:id="@+id/cancel"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="5"
+            android:background="@drawable/button_corner"
+            android:gravity="center"
+            android:text="Cancel"
+            android:textColor="@color/blackcolor"
+            android:textStyle="bold"
+            tools:ignore="ButtonOrder,ButtonStyle,HardcodedText,RtlHardcoded" />
+    </LinearLayout>
+
+</LinearLayout>

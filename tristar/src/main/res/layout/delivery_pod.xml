@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/ph_logo"
+    android:orientation="vertical"
+    tools:ignore="Overdraw">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/whitecolor"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/img_back"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center|left"
+            android:contentDescription="@string/back"
+            android:paddingLeft="5dp"
+            android:src="@drawable/imagesleft"
+            tools:ignore="RtlHardcoded,RtlSymmetry" />
+
+        <TextView
+            android:id="@+id/txt_back"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center|left"
+            android:text="@string/back"
+            android:textColor="@color/blackcolor"
+            android:textSize="16sp"
+            tools:ignore="RtlHardcoded" />
+
+        <TextView
+            android:id="@+id/txt_form_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="8"
+            android:gravity="center"
+            android:text="@string/pick_deli_pod"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txt_sync"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center|right"
+            android:textSize="16sp"
+            tools:ignore="RtlHardcoded" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txt_court_job_title_id"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="@color/whitecolor"
+        android:gravity="center"
+        android:text="@string/val_work_order_id"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/pick_title"
+                android:layout_width="match_parent"
+                android:layout_height="28dp"
+                android:layout_marginTop="3dp"
+                android:background="@color/whitecolor"
+                android:gravity="center"
+                android:text="@string/pick_pod"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <include layout="@layout/sub_activity_pickup_items" />
+
+
+            <TextView
+                android:id="@+id/delivery_title"
+                android:layout_width="match_parent"
+                android:layout_height="28dp"
+                android:layout_marginTop="3dp"
+                android:background="@color/whitecolor"
+                android:gravity="center"
+                android:text="@string/deli_pod"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/layout_delivery_items"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="@string/date"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/whitecolor" />
+
+                <Button
+                    android:id="@+id/btn_delivery_date"
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:background="@drawable/buttonbg"
+                    android:text="@string/val_date" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@android:color/darker_gray" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/time"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/whitecolor" />
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:id="@+id/btn_delivery_time"
+                        style="?android:attr/buttonStyleSmall"
+                        android:layout_width="0dp"
+                        android:layout_height="35dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/buttonbg"
+                        android:text="@string/val_time"
+                        tools:ignore="RtlHardcoded" />
+
+                    <CheckBox
+                        android:id="@+id/chk_delivery_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:checked="true"
+                        tools:ignore="RtlHardcoded" />
+                </TableRow>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@android:color/darker_gray" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:text="@string/comments"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/whitecolor" />
+
+
+                <EditText
+                    android:id="@+id/txt_delivery_comment"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:background="@drawable/roundedcorner"
+                    android:ems="10"
+                    android:focusableInTouchMode="true"
+                    android:gravity="left|top"
+                    android:hint=""
+                    android:inputType="textCapSentences"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:singleLine="false"
+                    tools:ignore="RtlHardcoded"></EditText>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@android:color/darker_gray" />
+
+                <include layout="@layout/sub_activity_delivery_items" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/btn_getgps"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/whitecolor"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@android:color/darker_gray"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"/>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:orientation="vertical"
+                android:layout_marginTop="5dp"
+                >
+
+                <LinearLayout
+                    android:id="@+id/layout_attach_top"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                   >
+                    <Button
+                        android:id="@+id/btn_pick_attach"
+                        android:layout_width="0dp"
+                        android:layout_height="35dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/button_corner"
+                        android:text="@string/attachments"
+                        android:textColor="@color/blackcolor"
+                        android:textSize="18sp"
+                        android:textStyle="bold"/>
+
+
+                    <ImageView
+                        android:id="@+id/attach_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="28dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:background="@drawable/attachment_icon"
+                        android:visibility="gone"
+                        tools:ignore="ContentDescription" />
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/buttonsign"
+                        android:layout_width="0dp"
+                        android:layout_height="35dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/button_corner"
+                        android:text="@string/deli_sign"
+                        android:textColor="@color/blackcolor"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/attach_icon_general"
+                        android:layout_width="wrap_content"
+                        android:layout_height="28dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:background="@drawable/attachment_icon"
+                        android:visibility="gone"
+                        tools:ignore="ContentDescription" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btn_Submit"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/button_corner"
+                    android:text="@string/court_pod_submitbtn"
+                    android:textColor="@color/blackcolor"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

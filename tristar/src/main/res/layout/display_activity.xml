@@ -1,0 +1,227 @@
+<!--suppress ALL -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ph_logo"
+    android:orientation="vertical"
+    android:weightSum="10"
+    tools:ignore="Overdraw">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_gravity="center"
+        android:background="@color/whitecolor"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Select Profile"
+        android:textColor="@color/blackcolor"
+        android:textSize="18sp"
+        android:textStyle="bold|normal"
+        tools:ignore="HardcodedText" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_weight="10"
+        android:weightSum="1"
+        android:background="@color/whitecolor"
+        android:orientation="vertical"
+        tools:ignore="InefficientWeight">
+
+        <Button
+            android:id="@+id/serverlist"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/blackcolor"
+            android:text="Add Profile"
+            android:textSize="18sp" 
+            android:textColor="@color/whitecolor"
+            tools:ignore="HardcodedText" />
+
+        <!--
+             <Button
+            android:id="@+id/serverlist"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/whitecolor"
+ 
+            android:textStyle="bold"
+          android:layout_margin="1dp"
+            android:text="Add Profile"
+            android:textColor="@color/blackcolor"
+            android:background="@color/blackcolor"/>
+        -->
+
+        <ListView
+            android:id="@+id/list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@color/attach_transparent"
+            tools:ignore="InefficientWeight,NestedWeights"></ListView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/black"></View>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1"
+            android:gravity="center"
+            android:layout_margin="5dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:weightSum="1"
+                android:layout_margin="5dp"
+                android:id="@+id/select_notification"
+                android:orientation="horizontal"
+                tools:ignore="InefficientWeight">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Select Notification Time"
+                    android:layout_weight="1"
+                    android:textColor="@android:color/black"
+                    android:layout_marginLeft="8dp"
+                    android:textSize="14dp"
+                    android:layout_gravity="center"
+                    tools:ignore="HardcodedText,NestedWeights,RtlHardcoded,SpUsage" />
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="5 Minutes"
+                    android:id="@+id/values"
+                    android:textColor="@android:color/black"
+                    android:layout_marginLeft="8dp"
+                    android:textSize="14dp"
+                    android:layout_gravity="center"
+                    tools:ignore="HardcodedText,NestedWeights,RtlHardcoded,SpUsage" />
+
+                <!--<CheckBox-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginLeft="10dp"-->
+                <!--android:layout_weight=".4"-->
+                <!--android:layout_marginRight="10dp"-->
+                <!--android:textSize="15dp"-->
+                <!--android:id="@+id/debug"-->
+                <!--android:text="Enable Log"-->
+                <!--android:textColor="@color/blackcolor"-->
+                <!--/>-->
+                <ImageView
+                    android:layout_width="27dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/notification_icon"
+                    android:background="@drawable/downicon"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/black"></View>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1"
+            android:gravity="center"
+            android:layout_margin="5dp"
+            android:orientation="horizontal">
+            <ToggleButton
+                android:id="@+id/debug"
+                android:layout_width="50dp"
+                android:layout_height="45dp"
+
+                android:background="@drawable/bgtoggle"
+                android:textOn=""
+                android:textOff=""
+                android:layout_gravity="center"
+
+
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:weightSum="1"
+                android:orientation="horizontal"
+                tools:ignore="InefficientWeight">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Enable Log"
+                android:layout_weight=".2"
+                android:textColor="@android:color/black"
+                android:layout_marginLeft="8dp"
+                android:textSize="14dp"
+                android:layout_gravity="center"
+                tools:ignore="HardcodedText,NestedWeights,RtlHardcoded,SpUsage" />
+            <!--<CheckBox-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginLeft="10dp"-->
+                <!--android:layout_weight=".4"-->
+                <!--android:layout_marginRight="10dp"-->
+                <!--android:textSize="15dp"-->
+                <!--android:id="@+id/debug"-->
+                <!--android:text="Enable Log"-->
+                <!--android:textColor="@color/blackcolor"-->
+                <!--/>-->
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:layout_weight=".4"
+                    android:text="clear log"
+                    android:textColor="@android:color/white"
+                    android:background="@android:color/black"
+                    android:id="@+id/btnClearLog"
+                    tools:ignore="HardcodedText" />
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_weight=".4"
+                android:layout_marginLeft="5dp"
+                android:text="Send Mail"
+                android:textColor="@android:color/white"
+                android:background="@android:color/black"
+                android:id="@+id/send_mail"
+                tools:ignore="HardcodedText" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/done"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/blackcolor"
+            android:text="Done"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:textSize="18dp"
+            android:textColor="@color/whitecolor"
+            tools:ignore="HardcodedText,SpUsage" />
+    </LinearLayout>
+
+</LinearLayout>

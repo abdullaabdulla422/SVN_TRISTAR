@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/ph_logo"
+    android:orientation="vertical"
+    tools:ignore="Overdraw">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/whitecolor"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="10dp" >
+
+        <ImageView
+            android:id="@+id/imageButtonback"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center|left"
+            android:paddingLeft="5dp"
+            android:src="@drawable/imagesleft"
+            tools:ignore="ContentDescription,RtlHardcoded,RtlSymmetry" />
+
+        <TextView
+            android:id="@+id/textviewback"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2.5"
+            android:gravity="center|left"
+            android:text="@string/back"
+            android:textColor="@color/blackcolor"
+            android:textSize="16sp"
+            tools:ignore="RtlHardcoded" />
+
+        
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="2.5"
+           android:gravity="center|right"
+           
+            
+            android:text="@string/enter_attempt"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            tools:ignore="RtlHardcoded" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/txt_sync"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center|right"
+            android:textSize="16sp"
+            tools:ignore="InconsistentLayout,RtlHardcoded" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="640dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/txt_workorder"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:background="@color/whitecolor"
+                android:gravity="center"
+                android:text="@string/val_work_order_id"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/diligenceitem"
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginTop="15dp"
+                 android:background="@drawable/buttonbg"
+                android:text="@string/btn_diligence_item"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                tools:ignore="RtlHardcoded" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:background="@android:color/darker_gray" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="20dp"
+                android:text="@string/attempt_txt_Special"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/whitecolor"
+                tools:ignore="RtlHardcoded,RtlSymmetry" />
+
+            <EditText
+                android:id="@+id/edt_comment"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_gravity="top"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/roundedcorner"
+                android:ems="10"
+                android:focusableInTouchMode="true"
+                android:gravity="left|top"
+                android:hint=""
+                android:inputType="textMultiLine"
+                android:maxLength="800"
+                android:paddingLeft="5dp"
+                android:paddingTop="5dp"
+                android:singleLine="false"
+                tools:ignore="RtlHardcoded,RtlSymmetry">
+            </EditText>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:background="@android:color/darker_gray" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:paddingLeft="20dp"
+                    android:text="@string/address"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/whitecolor"
+                    tools:ignore="RtlHardcoded,RtlSymmetry" />
+
+                <Button
+                    android:id="@+id/address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:visibility="gone"
+                    android:layout_marginTop="5dp"
+                      style="?android:attr/buttonStyleSmall"
+                     android:background="@drawable/buttonbg"
+                    android:padding="10dp"
+                    android:textStyle="bold"
+                    android:text="Add Address"
+                      android:textColor="@color/blackcolor"
+                    tools:ignore="HardcodedText,RtlHardcoded" />
+                 
+            </RelativeLayout>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="2dp"
+                    android:id="@+id/txt_address_type"
+                    android:layout_marginTop="10dp"
+                    android:paddingLeft="20dp"
+                    android:text="@string/home"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/whitecolor"
+                    android:textSize="14sp"
+                    tools:ignore="RtlHardcoded,RtlSymmetry" />
+
+                <TextView
+                    android:id="@+id/textActivityAttemptAddress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="11dp"
+                    android:maxLines="2"
+                    android:paddingLeft="22dp"
+                    android:text="@string/val_address"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/whitecolor"
+                    android:textSize="14sp"
+                    tools:ignore="RtlHardcoded,RtlSymmetry" />
+            </TableRow>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:background="@android:color/darker_gray" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="20dp"
+                android:text="@string/due_date"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/whitecolor"
+                tools:ignore="RtlHardcoded,RtlSymmetry" />
+
+            <Button
+                android:id="@+id/btn_datedelivery"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="25dp"
+                  android:background="@drawable/button_corner"
+                 android:textStyle="bold"
+                android:text="@string/val_date"
+                tools:ignore="RtlHardcoded" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="15dp"
+                android:background="@android:color/darker_gray" />
+
+            <include
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="120dp"
+                layout="@layout/processorder_attempt_include" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

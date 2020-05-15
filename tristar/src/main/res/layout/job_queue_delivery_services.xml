@@ -1,0 +1,482 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="320dp"
+    android:layout_height="match_parent"
+    android:background="@color/whitecolor"
+    android:orientation="vertical"
+    tools:ignore="Overdraw">
+
+    <FrameLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+    
+    <ImageView
+        android:id="@+id/upload"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="left"
+        android:layout_margin="10dp"
+        android:background="@drawable/upload"
+        tools:ignore="ContentDescription,RtlHardcoded" />
+    
+    <ImageView
+        android:id="@+id/close"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="right"
+        android:layout_margin="10dp"
+        android:background="@drawable/cancel1"
+        tools:ignore="ContentDescription,RtlHardcoded" />
+    </FrameLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            tools:ignore="ScrollViewSize">
+
+            <TextView
+                android:id="@+id/delivery_workorder"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/btn_gray"
+                android:gravity="center"
+                android:textColor="@color/blackcolor"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                tools:ignore="SpUsage" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/address"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/blackcolor" />
+
+                <TextView
+                    android:id="@+id/delivery_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/blackcolor" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="@android:color/darker_gray" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/priority"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/blackcolor" />
+
+                <TextView
+                    android:id="@+id/delivery_priority"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/blackcolor" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="@android:color/darker_gray" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Job Instructions"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/blackcolor"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:id="@+id/delivery_jobinstructions"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/blackcolor" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="@android:color/darker_gray" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Address Instructions"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/blackcolor"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:id="@+id/delivery_addressinstructions"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/blackcolor" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="@android:color/darker_gray" />
+               <!-- <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:weightSum="1"
+                    >-->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp"
+                        android:text="Case Number"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/blackcolor"
+                        tools:ignore="HardcodedText" />
+
+                    <TextView
+                        android:id="@+id/delivery_casenumber"
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/blackcolor"
+                        tools:ignore="InefficientWeight,RtlHardcoded" />
+               <!-- </LinearLayout>-->
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="@android:color/darker_gray" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Case Name"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/blackcolor"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:id="@+id/delivery_casename"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/blackcolor" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="@android:color/darker_gray" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/due_date"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/blackcolor" />
+
+                <TextView
+                    android:id="@+id/delivery_due_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/blackcolor" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="@android:color/darker_gray" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/due_time"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/blackcolor" />
+
+                <TextView
+                    android:id="@+id/delivery_due_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/blackcolor" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="@android:color/darker_gray" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/date"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/blackcolor" />
+
+                <TextView
+                    android:id="@+id/delivery_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/blackcolor" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="@android:color/darker_gray" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/time"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/blackcolor" />
+
+                <TextView
+                    android:id="@+id/delivery_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/blackcolor" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="@android:color/darker_gray" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/comments"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/blackcolor" />
+
+                <EditText
+                    android:id="@+id/delivery_comments"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/blackcolor"
+                    android:clickable="true"
+                    android:background="@android:color/transparent"
+                    />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="@android:color/darker_gray" />
+                
+                 <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Fee Advance"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/blackcolor"
+                     tools:ignore="HardcodedText" />
+
+                <EditText
+                    android:id="@+id/delivery_fee_advance"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/blackcolor"
+                    android:clickable="true"
+                    android:background="@android:color/transparent"/>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="@android:color/darker_gray" />
+                
+                 <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Weight"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/blackcolor"
+                     tools:ignore="HardcodedText" />
+
+                <EditText
+                    android:id="@+id/delivery_weight"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/blackcolor"
+                    android:clickable="true"
+                    android:background="@android:color/transparent"/>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="@android:color/darker_gray" />
+                
+                 <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Pieces"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/blackcolor"
+                     tools:ignore="HardcodedText" />
+
+                <EditText
+                    android:id="@+id/delivery_pieces"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/blackcolor"
+                    android:clickable="true"
+                    android:background="@android:color/transparent"
+                    />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="@android:color/darker_gray" />
+                
+                 <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Wait Time"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/blackcolor"
+                     tools:ignore="HardcodedText" />
+
+                <EditText
+                    android:id="@+id/delivery_wait_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/blackcolor"
+                    android:clickable="true"
+                    android:background="@android:color/transparent"/>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="@android:color/darker_gray" />
+                
+                 <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Recevied By"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/blackcolor"
+                     tools:ignore="HardcodedText" />
+
+                <EditText
+                    android:id="@+id/delivery_received_by"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/blackcolor"
+                    android:clickable="true"
+                    android:background="@android:color/transparent"/>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="@android:color/darker_gray" />
+                
+                 <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Signature"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/blackcolor"
+                     tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:id="@+id/delivery_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/blue_text" />
+                
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_save"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_gravity="right"
+                android:layout_margin="10dp"
+                android:background="@drawable/black_corner_button"
+                android:text="@string/Save"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

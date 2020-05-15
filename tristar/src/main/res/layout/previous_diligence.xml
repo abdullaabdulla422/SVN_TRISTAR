@@ -1,0 +1,68 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ph_logo"
+    android:orientation="vertical"
+    android:scrollbars="vertical"
+    tools:ignore="Overdraw">
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp" 
+        android:background="@color/whitecolor">
+
+        <ImageView
+            android:id="@+id/imageButtonback"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|left"
+            android:src="@drawable/imagesleft"
+            tools:ignore="ContentDescription,RtlHardcoded" />
+
+        <TextView
+            android:id="@+id/txt_processback"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/back"
+              android:background="@color/whitecolor"
+            android:textColor="@color/blackcolor"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingRight="50dp"
+            android:gravity="center"
+              android:background="@color/whitecolor"
+            android:text="@string/prev_diligences"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            tools:ignore="RtlHardcoded,RtlSymmetry" />
+
+       
+    </TableRow>
+
+    <TextView
+        android:id="@+id/Previous_diligences"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:background="@color/whitecolor"
+        android:gravity="center"
+        android:text="@string/val_work_order_id"
+        android:textColor="@android:color/black"
+        android:textStyle="bold" />
+
+    <ListView
+        android:id="@+id/listViewpreviousdiligence"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/black" >
+    </ListView>
+
+</LinearLayout>

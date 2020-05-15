@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/camera_preview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        >
+    </FrameLayout>
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_gravity="top"
+        android:minHeight="?attr/actionBarSize"
+        android:background="@color/actionbar_opacity"
+        app:theme="@style/TransparentToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="start"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_height="50dp">
+
+            <TextView
+                android:id="@+id/cancel"
+                android:layout_width="170dp"
+                android:layout_height="30dp"
+                android:background="@android:color/holo_red_light"
+                android:layout_marginRight="15dp"
+                tools:ignore="ContentDescription"
+                android:text="Cancel"
+                android:gravity="center"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="@color/whitecolor"
+                />
+
+            <TextView
+                android:id="@+id/done"
+                android:layout_width="170dp"
+                android:layout_height="30dp"
+                android:background="@android:color/holo_red_light"
+                tools:ignore="ContentDescription"
+                android:text="Done"
+                android:gravity="center"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="@color/whitecolor"
+                />
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/scanned_layout"
+        android:background="@color/attacheditbg"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="200dp"
+            android:textSize="16dp"
+            android:layout_margin="5dp"
+            android:textColor="@color/blackcolor"
+            android:layout_gravity="left"
+            android:text="Scanned Jobs:"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/scan_value"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="0.24"
+            android:background="@drawable/roundedcorner"
+            android:focusableInTouchMode="true"
+            android:gravity="top"
+            android:imeOptions="actionNext"
+            android:padding="3dp"
+            android:textColor="@color/blackcolor"
+            android:textSize="16sp"
+            tools:ignore="RtlHardcoded,TextFields" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

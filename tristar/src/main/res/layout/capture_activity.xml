@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            tools:ignore="DisableBaselineAlignment,RtlHardcoded">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Order # : "
+                    android:textColor="@android:color/black"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:id="@+id/workorder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/black" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:text="Latitude    : "
+                    android:textColor="@android:color/black"
+                    tools:ignore="HardcodedText"
+
+                    />
+
+                <TextView
+                    android:id="@+id/lat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/black" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            tools:ignore="DisableBaselineAlignment,RtlHardcoded">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:orientation="horizontal"
+                tools:ignore="InefficientWeight">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Date : "
+                    android:textColor="@android:color/black"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:id="@+id/date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/black" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Longitude : "
+                    android:textColor="@android:color/black"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:id="@+id/longi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/black" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        tools:ignore="InefficientWeight">
+
+        <SurfaceView
+            android:id="@+id/surfaceView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:gravity="center"
+            android:text="Cancel"
+            android:textColor="@color/whitecolor"
+            android:textSize="14dp"
+            tools:ignore="HardcodedText,SpUsage" />
+
+        <TextView
+            android:id="@+id/btn_capture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:onClick="captureImage"
+            android:padding="10dp"
+            android:text="Capture"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            tools:ignore="HardcodedText,InefficientWeight" />
+
+
+
+        <android.support.v7.widget.SwitchCompat
+            android:id="@+id/toggleButton1"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_gravity="center|right"
+            android:layout_margin="15dp"
+            android:gravity="center"
+            android:textColor="@color/whitecolor"
+            android:textOff=""
+            android:textOn=""
+            tools:ignore="HardcodedText,RtlHardcoded"
+            android:theme="@style/SCBSwitch"
+            android:checked="false"
+            />
+
+
+        <!--<Switch-->
+            <!--android:id="@+id/toggleButton1"-->
+            <!--android:layout_width="50dp"-->
+            <!--android:layout_height="25dp"-->
+            <!--android:layout_gravity="center|right"-->
+            <!--android:layout_margin="15dp"-->
+            <!--android:background="@drawable/bgtoggle"-->
+            <!--android:gravity="center"-->
+            <!--android:textColor="@color/whitecolor"-->
+            <!--android:textOff=""-->
+            <!--android:textOn=""-->
+            <!--tools:ignore="HardcodedText,RtlHardcoded"-->
+            <!--/>-->
+
+
+        <!--<ToggleButton-->
+        <!--android:id="@+id/toggleButton1"-->
+        <!--android:layout_width="50dp"-->
+        <!--android:layout_height="25dp"-->
+        <!--android:layout_gravity="center|right"-->
+        <!--android:layout_margin="15dp"-->
+        <!--android:background="@drawable/bgtoggle"-->
+        <!--android:button="@null"-->
+        <!--android:gravity="center"-->
+        <!--android:textOff=""-->
+        <!--android:textOn=""-->
+        <!--tools:ignore="RtlHardcoded" />-->
+    </LinearLayout>
+
+</LinearLayout>

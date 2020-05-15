@@ -1,0 +1,132 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blackcolor"
+    android:orientation="vertical"
+    tools:ignore="Overdraw">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:text="Status"
+        android:textColor="@color/whitecolor"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText,ObsoleteLayoutParam" />
+
+
+
+    <TextView
+        android:id="@+id/workoder"
+        android:layout_width="fill_parent"
+        android:layout_height="36dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/whitecolor"
+        android:gravity="center"
+        android:textColor="@color/blackcolor"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        tools:ignore="ObsoleteLayoutParam" />
+
+    <!--<View-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="1dp"-->
+        <!--android:layout_marginLeft="15dp"-->
+        <!--android:layout_marginRight="15dp"-->
+        <!--android:background="@android:color/darker_gray" />-->
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/darker_gray" />
+
+    <Button
+        android:id="@+id/select_status"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/button_corner"
+        android:text="Select Status"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        tools:ignore="HardcodedText,RtlHardcoded" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/darker_gray" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="20dp"
+        android:text="Status"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/whitecolor"
+        tools:ignore="HardcodedText,RtlHardcoded,RtlSymmetry" />
+
+    <EditText
+        android:id="@+id/edt_comment"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_gravity="top"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/roundedcorner"
+        android:ems="10"
+        android:focusableInTouchMode="true"
+        android:gravity="left|top"
+        android:hint=""
+        android:inputType="textMultiLine"
+        android:maxLength="800"
+        android:paddingLeft="5dp"
+        android:paddingTop="5dp"
+        android:singleLine="false"
+        tools:ignore="RtlHardcoded,RtlSymmetry">
+    </EditText>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/darker_gray" />
+
+    <Button
+        android:id="@+id/button_submit"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/whitecolor"
+        android:text="Submit"
+        android:textColor="@color/blackcolor"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText" />
+
+</LinearLayout>

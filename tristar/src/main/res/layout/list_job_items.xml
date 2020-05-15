@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+   
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+         android:background="@color/blackcolor"
+       
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        tools:ignore="RtlHardcoded,RtlSymmetry">
+
+        <Button
+            android:id="@+id/btn_minus"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/minus"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/txt_workorder"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/black"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dp"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            tools:ignore="RtlHardcoded,RtlSymmetry" />
+
+        <Button
+            android:id="@+id/btn_delete"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:background="@android:color/holo_red_light"
+            android:gravity="center"
+            android:text="Delete"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:visibility="gone"
+            tools:ignore="HardcodedText" />
+    </LinearLayout>
+
+</RelativeLayout>

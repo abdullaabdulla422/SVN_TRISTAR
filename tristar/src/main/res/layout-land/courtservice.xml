@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blackcolor"
+    android:orientation="vertical"
+    android:weightSum="100"
+    tools:ignore="Overdraw">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/whitecolor"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="10dp" >
+          <ImageView
+            android:id="@+id/imageButtonbackpro"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|left"
+            android:background="@android:color/white"
+            android:src="@drawable/imagesleft"
+              tools:ignore="ContentDescription,RtlHardcoded" />
+
+        <TextView
+            android:id="@+id/txt_logout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="center|left"
+            android:text="@string/logout"
+            android:textColor="@color/blackcolor"
+            android:textSize="16sp"
+            tools:ignore="RtlHardcoded" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="5"
+            android:gravity="center"
+            android:text="@string/court_delivery"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txt_sync"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="center|right"
+            android:text="@string/sync"
+            android:textColor="@color/blackcolor"
+            android:textSize="16sp"
+            tools:ignore="RtlHardcoded" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/whitecolor"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="5dp"
+        android:weightSum="3"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center|left"
+            android:text="Filter by:"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText,RtlHardcoded" />
+
+        <TextView
+            android:id="@+id/milestone_txt_filter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="All"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_marginRight="10dp"
+            android:id="@+id/milestone_img_filter"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:gravity="end"
+            android:src="@drawable/drop_down"
+            tools:ignore="HardcodedText,RtlHardcoded"
+            android:layout_alignParentRight="true" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+     <ViewFlipper
+        android:id="@+id/viewfliper"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="100" >
+
+         <FrameLayout
+             android:layout_width="match_parent"
+             android:layout_height="match_parent">
+
+
+
+         <LinearLayout
+            android:id="@+id/lin_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:background="@android:color/white"
+            android:orientation="vertical"
+            tools:ignore="RtlHardcoded">
+
+            <ListView
+                android:id="@+id/listView1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="90"
+                android:divider="@color/secondary_text"
+                android:dividerHeight="0.5dp"
+                android:background="@drawable/ph_logo" >
+            </ListView>
+        </LinearLayout>
+
+
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:orientation="vertical"
+                 android:id="@+id/milestone_layout"
+                 android:background="@color/whitecolor"
+                 android:visibility="gone"
+                 android:layout_height="wrap_content">
+
+
+                 <ListView
+                     android:id="@+id/filter_listView"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     tools:listitem="@layout/child_milestone" />
+
+
+             </LinearLayout>
+
+         </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/lin_mapview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="37dp"
+                android:background="@android:color/white"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/btn_hybrid"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="@string/map_hybrid"
+                    android:textColor="@android:color/darker_gray"
+                    tools:ignore="ButtonStyle" />
+
+                <Button
+                    android:id="@+id/btn_satellite"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="@string/map_sateliite"
+                    android:textColor="@android:color/darker_gray"
+                    tools:ignore="ButtonStyle" />
+
+                <Button
+                    android:id="@+id/btn_standard"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="@string/map_standard"
+                    android:textColor="@android:color/darker_gray"
+                    tools:ignore="ButtonStyle" />
+            </LinearLayout>
+
+            <fragment
+                android:id="@+id/mapview"
+                android:name="com.google.android.gms.maps.SupportMapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+     </ViewFlipper> 
+
+    <include
+        
+        layout="@layout/menu_courtservice" />
+
+</LinearLayout>

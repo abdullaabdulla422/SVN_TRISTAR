@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/phlandsca_logo"
+    android:orientation="vertical"
+    tools:ignore="Overdraw">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/attacheditbg" >
+
+        <Button
+            android:id="@+id/btn_cancelcamera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="380dp"
+            android:background="@android:color/transparent"
+            android:text="@string/cancel"
+            android:textColor="@color/blackcolor"
+            tools:ignore="RtlHardcoded" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="220dp"
+        android:layout_height="140dp"
+        android:layout_marginLeft="130dp"
+        android:layout_marginTop="80dp"
+        android:contentDescription="@string/lockdescription"
+        android:src="@drawable/lock"
+        tools:ignore="RtlHardcoded" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/txtview1selectlib"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#5f5959"
+        android:textStyle="bold"
+        tools:ignore="RtlHardcoded" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="5dp"
+        android:text="@string/txtview2selectlib"
+        android:textSize="15sp"
+        tools:ignore="RtlHardcoded" />
+
+</LinearLayout>

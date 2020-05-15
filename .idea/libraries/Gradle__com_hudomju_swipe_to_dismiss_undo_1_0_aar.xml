@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.hudomju:swipe-to-dismiss-undo:1.0@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/swipe-to-dismiss-undo-1.0.aar/969c7a082a363cf621ce016712f74d4a/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/swipe-to-dismiss-undo-1.0.aar/969c7a082a363cf621ce016712f74d4a/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.hudomju/swipe-to-dismiss-undo/1.0/44de08343e358fa04f0ff7a9cfa9ed92f42bc627/swipe-to-dismiss-undo-1.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

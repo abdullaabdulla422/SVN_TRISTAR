@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   
+    android:background="@android:color/transparent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="@string/court_pod_fee_advance"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/whitecolor" />
+
+    <EditText
+        android:id="@+id/txt_deli_fee"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@drawable/roundedcorner"
+        android:ems="10"
+        android:focusableInTouchMode="true"
+        android:gravity="left|center_vertical"
+        android:hint=""
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:inputType="numberDecimal"
+        android:paddingTop="5dp"
+        android:singleLine="true"
+        tools:ignore="RtlHardcoded">
+    </EditText>
+
+    <View
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/darker_gray" />
+
+    <TextView
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="Check #"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/whitecolor" />
+
+    <EditText
+        android:visibility="gone"
+        android:id="@+id/edt_check_no"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/roundedcorner"
+        android:ems="10"
+        android:gravity="left|center_vertical"
+        android:hint=""
+        android:inputType="numberDecimal"
+        android:singleLine="true"
+        tools:ignore="RtlHardcoded">
+    </EditText>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="10dp"
+        android:background="@android:color/darker_gray" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="@string/weight"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/whitecolor" />
+
+    <EditText
+        android:id="@+id/txt_deli_weight"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@drawable/roundedcorner"
+        android:ems="10"
+        android:focusableInTouchMode="true"
+        android:gravity="left|center_vertical"
+        android:hint=""
+        android:inputType="numberDecimal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp"
+        android:singleLine="true"
+        tools:ignore="RtlHardcoded">
+    </EditText>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/darker_gray" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="@string/pieces"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+       android:textColor="@color/whitecolor" />
+
+    <EditText
+        android:id="@+id/txt_deli_pieces"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@drawable/roundedcorner"
+        android:ems="10"
+        android:focusableInTouchMode="true"
+        android:gravity="left|center_vertical"
+        android:hint=""
+        android:inputType="number"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp"
+        android:singleLine="true"
+        tools:ignore="RtlHardcoded">
+    </EditText>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/darker_gray" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="@string/court_pod_waittime"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/whitecolor" />
+
+    <EditText
+        android:id="@+id/txt_deli_wait_time"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@drawable/roundedcorner"
+        android:ems="10"
+        android:focusableInTouchMode="true"
+        android:gravity="left|center_vertical"
+        android:hint=""
+        android:inputType="number"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp"
+        android:singleLine="true"
+        tools:ignore="RtlHardcoded">
+    </EditText>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/darker_gray" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="@string/deli_rec"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/whitecolor" />
+
+    <EditText
+        android:id="@+id/txt_deli_recieved_by"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@drawable/roundedcorner"
+        android:ems="10"
+        android:focusableInTouchMode="true"
+        android:gravity="left|center_vertical"
+        android:hint=""
+         android:inputType="textCapSentences"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp"
+        android:singleLine="true"
+        tools:ignore="RtlHardcoded">
+    </EditText>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/darker_gray" />
+
+</LinearLayout>

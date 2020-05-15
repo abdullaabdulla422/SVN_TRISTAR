@@ -1,0 +1,185 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ph_logo"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    tools:ignore="Overdraw">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/whitecolor"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/settings"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="right|center"
+            android:layout_margin="10dp"
+            android:background="@color/whitecolor"
+            android:contentDescription="@string/cancel"
+            android:src="@drawable/settings_icon"
+            tools:ignore="RtlHardcoded" />
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/whitecolor"
+            android:gravity="center"
+            android:text="@string/login"
+            android:textColor="@color/blackcolor"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+
+        <ImageView
+            android:id="@+id/img_button"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="right|center"
+            android:layout_margin="10dp"
+            android:background="@color/whitecolor"
+            android:contentDescription="@string/cancel"
+            android:src="@drawable/cancel1"
+            tools:ignore="RtlHardcoded" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="Company Name"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/whitecolor"
+        android:textSize="16sp"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/btn_configure"
+        android:layout_width="fill_parent"
+        android:layout_height="35dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/button_corner"
+        android:text="@string/configure"
+        android:textColor="@color/blackcolor"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="@string/company_code"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/whitecolor"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/edt_company_code"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/roundedcorner"
+        android:ems="10"
+        android:focusableInTouchMode="true"
+        android:gravity="left|center_vertical"
+        android:hint="@string/company_code"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:singleLine="true"
+        android:textSize="16sp"
+        tools:ignore="RtlHardcoded">
+    </EditText>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="10dp"
+        android:text="@string/user_id"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/whitecolor"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/edt_username"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/roundedcorner"
+        android:ems="10"
+        android:focusableInTouchMode="true"
+        android:gravity="left|center_vertical"
+        android:hint="@string/user_id"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:singleLine="true"
+        android:textSize="16sp"
+        tools:ignore="RtlHardcoded" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="10dp"
+        android:text="@string/password"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/whitecolor"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/edt_password"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/roundedcorner"
+        android:ems="10"
+        android:focusableInTouchMode="true"
+        android:gravity="left|center_vertical"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:singleLine="true"
+        android:textSize="16sp"
+        tools:ignore="RtlHardcoded" />
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="fill_parent"
+        android:layout_height="35dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/button_corner"
+        android:text="@string/sign_in"
+        android:textColor="@color/blackcolor"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="@string/version" />
+
+</LinearLayout>

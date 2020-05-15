@@ -1,0 +1,586 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:orientation="vertical" >
+
+     <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" 
+            android:weightSum="1"
+            >
+     
+    <TextView
+        android:id="@+id/phy_des"
+        android:layout_width="fill_parent"
+        android:layout_height="35dp"
+        android:background="@color/whitecolor"
+        android:gravity="center"
+        android:text="@string/physicaldescription_finalstatus"
+        android:clickable="true"
+        android:layout_weight="0.1"
+        android:textColor="@color/blackcolor"
+        android:textSize="18sp" />
+    
+     <!--<ImageView-->
+            <!--android:id="@+id/expand_arrow_phy"-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="35dp"-->
+            <!--android:clickable="true"-->
+            <!--android:background="@android:color/white"-->
+            <!--android:layout_weight="0.9"-->
+            <!--android:src="@drawable/sort_right"-->
+            <!--android:visibility="visible"-->
+         <!--tools:ignore="ContentDescription" />-->
+                <!---->
+            <!--<ImageView-->
+            <!--android:id="@+id/collapse_arrow_phy"-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="35dp"-->
+            <!--android:clickable="true"-->
+            <!--android:background="@android:color/white"-->
+            <!--android:layout_weight="0.9"-->
+            <!--android:src="@drawable/sort_down"-->
+            <!--android:visibility="gone"-->
+                <!--tools:ignore="ContentDescription" />-->
+    
+    </LinearLayout>
+     <ScrollView
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content">
+     <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" 
+            android:visibility="visible"
+            android:id="@+id/physicaldescription_layout">
+  
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        tools:ignore="RtlHardcoded">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:paddingTop="5dp"
+            android:text="@string/sex"
+            android:textColor="@color/whitecolor"
+            android:textSize="16sp" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="94dp"
+            android:orientation="horizontal"
+            tools:ignore="RtlHardcoded">
+
+            <RadioButton
+                android:id="@+id/radio0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/radiomale_finalstatus"
+                android:textColor="@color/whitecolor"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:id="@+id/radio1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="@string/radiofemale_finalstatus"
+                android:textColor="@color/whitecolor"
+                android:textSize="16sp"
+                tools:ignore="RtlHardcoded" />
+        </RadioGroup>
+    </TableRow>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/age"
+        android:textColor="@color/whitecolor"
+        android:textSize="16sp"
+        tools:ignore="RtlHardcoded" />
+    
+  <!--  <Button
+        android:id="@+id/spinner_age"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/button_corner"
+        android:textColor="@color/blackcolor"
+        android:text=""
+        android:textSize="14sp" /> -->
+    
+       <FrameLayout
+
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content">
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+
+
+
+    <EditText
+        android:id="@+id/edt_age"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/roundedcorner"
+        android:focusableInTouchMode="true"
+        android:gravity="left|center_vertical"
+        android:imeOptions="actionNext"
+        android:maxLength="20"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp"
+        android:singleLine="true"
+        android:text=""
+        android:textColor="@color/blackcolor"
+        android:textSize="16sp"
+        tools:ignore="RtlHardcoded,TextFields" />
+           </LinearLayout>
+    
+    <ImageView
+         android:layout_width="30dp"
+         android:layout_height="25dp"
+         
+         android:layout_gravity="end|center"
+         android:id="@+id/select_age"
+         android:src="@drawable/forwardarrow"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="7dp"
+        tools:ignore="ContentDescription,RtlHardcoded" />
+    </FrameLayout>    
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/darker_gray" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/hair"
+        android:textColor="@color/whitecolor"
+        android:textSize="16sp"
+        tools:ignore="RtlHardcoded" />
+    
+  <!--  <Button
+        android:id="@+id/spinner_hair"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/button_corner"
+        android:textColor="@color/blackcolor"
+        android:text=""
+        android:textSize="14sp" />  --> 
+    
+      <FrameLayout 
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content">
+
+    <EditText
+        android:id="@+id/edt_hair"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/roundedcorner"
+        android:focusableInTouchMode="true"
+        android:gravity="left|center_vertical"
+        android:imeOptions="actionNext"
+        android:inputType="textCapSentences"
+        android:maxLength="20"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp"
+        android:singleLine="true"
+        android:text=""
+        android:textColor="@color/blackcolor"
+        android:textSize="16sp"
+        tools:ignore="RtlHardcoded" />
+    
+     <ImageView
+         android:layout_width="30dp"
+         android:layout_height="25dp"
+         android:layout_gravity="end|center"
+         android:id="@+id/select_hair"
+         android:src="@drawable/forwardarrow"
+         android:layout_marginRight="15dp"
+         android:layout_marginTop="7dp"
+         tools:ignore="ContentDescription,RtlHardcoded" />
+    </FrameLayout> 
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/darker_gray" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/race"
+        android:textColor="@color/whitecolor"
+        android:textSize="16sp"
+        tools:ignore="RtlHardcoded" />
+    
+   <!--  <Button
+        android:id="@+id/spinner_race"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/button_corner"
+        android:textColor="@color/blackcolor"
+        android:text=""
+        android:textSize="14sp" />  -->
+        
+        <FrameLayout 
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content">
+
+    <EditText
+        android:id="@+id/edt_race"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/roundedcorner"
+        android:focusableInTouchMode="true"
+        android:gravity="left|center_vertical"
+        android:imeOptions="actionNext"
+        android:inputType="textCapSentences"
+        android:maxLength="20"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp"
+        android:singleLine="true"
+        android:text=""
+        android:textColor="@color/blackcolor"
+        android:textSize="16sp"
+        tools:ignore="RtlHardcoded" />
+        
+     <ImageView
+         android:layout_width="30dp"
+         android:layout_height="25dp"
+         android:layout_gravity="end|center"
+         android:id="@+id/select_race"
+         android:src="@drawable/forwardarrow"
+         android:layout_marginRight="15dp"
+         android:layout_marginTop="7dp"
+         tools:ignore="ContentDescription,RtlHardcoded" />
+    </FrameLayout> 
+    
+   
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/darker_gray" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/weight"
+        android:textColor="@color/whitecolor"
+        android:textSize="16sp"
+        tools:ignore="RtlHardcoded" />
+    
+    <!-- <Button
+        android:id="@+id/spinner_weight"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/button_corner"
+        android:textColor="@color/blackcolor"
+        android:text=""
+        android:textSize="14sp" />   -->
+    
+      <FrameLayout 
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content">
+    
+    <EditText
+        android:id="@+id/edt_weight"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/roundedcorner"
+        android:focusableInTouchMode="true"
+        android:gravity="left|center_vertical"
+        android:imeOptions="actionNext"
+        android:inputType="number"
+        android:maxLength="20"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp"
+        android:singleLine="true"
+        android:text=""
+        android:textColor="@color/blackcolor"
+        android:textSize="16sp"
+        tools:ignore="RtlHardcoded" />
+    
+     <ImageView
+         android:layout_width="30dp"
+         android:layout_height="25dp"
+         android:layout_gravity="end|center"
+         android:id="@+id/select_weight"
+         android:src="@drawable/forwardarrow"
+         android:layout_marginRight="15dp"
+         android:layout_marginTop="7dp"
+         tools:ignore="ContentDescription,RtlHardcoded" />
+    </FrameLayout>     
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/darker_gray" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/height"
+        android:textColor="@color/whitecolor"
+        android:textSize="16sp"
+        tools:ignore="RtlHardcoded" />
+    
+  <!--   <Button
+        android:id="@+id/spinner_height"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/button_corner"
+        android:textColor="@color/blackcolor"
+        android:text=""
+        android:textSize="14sp" />  -->
+    
+      <FrameLayout 
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content">
+
+    <EditText
+        android:id="@+id/edt_height"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/roundedcorner"
+        android:focusableInTouchMode="true"
+        android:gravity="center_vertical"
+        android:imeOptions="actionNext"
+        android:maxLength="20"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text=""
+        android:textColor="@color/blackcolor"
+        android:textSize="16sp"
+        tools:ignore="TextFields" />
+    
+    <ImageView
+         android:layout_width="30dp"
+         android:layout_height="25dp"
+         android:layout_gravity="end|center"
+         android:id="@+id/select_height"
+        android:src="@drawable/forwardarrow"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="7dp"
+        tools:ignore="ContentDescription,RtlHardcoded" />
+    </FrameLayout>  
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/darker_gray" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/eye"
+        android:textColor="@color/whitecolor"
+        android:textSize="16sp"
+        tools:ignore="RtlHardcoded" />
+    
+   <!--  <Button
+        android:id="@+id/spinner_eye"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/button_corner"
+        android:textColor="@color/blackcolor"
+        android:text=""
+        android:textSize="14sp" />  -->
+    
+     <FrameLayout 
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content">
+     
+    <EditText
+        android:id="@+id/edt_eye"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/roundedcorner"
+        android:focusableInTouchMode="true"
+        android:gravity="left|center_vertical"
+        android:inputType="textCapSentences"
+        android:maxLength="20"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp"
+        android:singleLine="true"
+         android:imeOptions="actionNext"
+        android:text=""
+        android:textColor="@color/blackcolor"
+        android:textSize="16sp"
+        tools:ignore="RtlHardcoded" />
+        
+    <ImageView
+         android:layout_width="30dp"
+         android:layout_height="25dp"
+         android:layout_gravity="end|center"
+         android:id="@+id/select_eye"
+        android:src="@drawable/forwardarrow"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="7dp"
+        tools:ignore="ContentDescription,RtlHardcoded" />
+    </FrameLayout> 
+        
+        <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/darker_gray" />
+        
+         <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/destingushingmarks_finalstatus"
+        android:textColor="@color/whitecolor"
+        android:textSize="16sp"
+             tools:ignore="RtlHardcoded" />
+         
+        
+         
+       <FrameLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <EditText
+        android:id="@+id/edt_distingusingmark"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/roundedcorner"
+        android:focusableInTouchMode="true"
+        android:gravity="left|center_vertical"
+        android:inputType="textCapSentences"
+        android:maxLength="100"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp"
+        android:singleLine="true"
+        android:imeOptions="actionNext"
+        android:text=""
+        android:textSize="16sp"
+        tools:ignore="RtlHardcoded" />
+    
+     <ImageView
+         android:layout_width="wrap_content"
+         android:layout_height="20dp"
+         android:layout_gravity="end|center"
+         android:id="@+id/select_mark"
+         android:src="@drawable/sort_down"
+         tools:ignore="ContentDescription" />
+    </FrameLayout> 
+    
+     <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/darker_gray" />
+
+
+         <Button
+             android:id="@+id/next_phy"
+             android:layout_width="match_parent"
+             android:layout_height="35dp"
+             android:layout_marginLeft="15dp"
+             android:layout_marginRight="15dp"
+             android:layout_marginTop="8dp"
+             android:layout_marginBottom="8dp"
+             android:background="@drawable/button_corner"
+             android:text="Next"
+             android:textColor="@color/blackcolor"
+             android:textSize="18sp"
+             android:textStyle="bold" />
+      
+    </LinearLayout>
+     </ScrollView>
+
+</LinearLayout>

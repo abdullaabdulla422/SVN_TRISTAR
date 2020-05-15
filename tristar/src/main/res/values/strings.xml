@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--suppress ALL -->
+<resources>
+
+    <string name="app_name">WinServe Mobile</string>
+    <string name="version">Version 3.3.7</string>
+
+    <!-- Common Strings Labels -->
+
+    <string name="empty_string"></string>
+    <string name="scanner_activity">Scanner</string>
+    <string name="done">Done</string>
+    <string name="cancel">Cancel</string>
+    <string name="back">Back</string>
+    <string name="sync">Sync</string>
+    <string name="date">Date</string>
+    <string name="time">Time</string>
+    <string name="edit">Edit</string>
+    <string name="alert_message">Message</string>
+    <string name="alert_no">NO</string>
+    <string name="alert_yes">YES</string>
+    <string name="alert_ok">OK</string>
+    <string name="alert_final_status">Final Status</string>
+    <string name="alert_Record_del">Record Diligence</string>
+    <string name="actionbar_pdfviewer">PDF LIST</string>
+    <string name="alert_logout">Are you sure you want to logout?</string>
+    <string name="alert_sync">Are you sure you want to sync the data?</string>
+    <string name="comments">Comments</string>
+    <string name="configure">Select Profile</string>
+
+    <!-- Text values replacable -->
+    <string name="val_instructions">{Instructions}</string>
+    <string name="val_time">{time here}</string>
+    <string name="val_date">{date here}</string>
+    <string name="val_work_order_id">{work order id here}</string>
+    <string name="val_standard">{Standard}</string>
+    <string name="val_name">{Name}</string>
+    <string name="val_address">{address}</string>
+    <string name="val_court">{court}</string>
+
+    <!-- Titles and screen headings -->
+    <string name="prev_diligences">Previous Diligences</string>
+    <string name="category">Category</string>
+    <string name="court_service">CourtService</string>
+    <string name="court_delivery">Delivery / Court</string>
+    <string name="court_pod">Court POD</string>
+    <string name="jobs_in_queue">Jobs in Queue</string>
+    <string name="process_orders">Process Orders</string>
+    <string name="submit_delivery_pod">Submit Delivery POD</string>
+
+    <!-- Screen specific Labels -->
+    <string name="company_code">Company Code</string>
+    <string name="user_id">User ID</string>
+    <string name="password">Password</string>
+    <string name="sign_in">Sign In</string>
+    <string name="mylist">MyList</string>
+    <string name="filter">Filter</string>
+    <string name="login">Login</string>
+    <string name="logout">Logout</string>
+    <string name="sex">Sex</string>
+    <string name="age">Age</string>
+    <string name="hair">Hair</string>
+    <string name="race">Race</string>
+    <string name="reset">Reset</string>
+    <string name="weight">Weight</string>
+    <string name="height">Height</string>
+    <string name="pieces">Pieces</string>
+    <string name="eye">Eye</string>
+    <string name="name">Name</string>
+    <string name="court">Court</string>
+    <string name="requestor">Requestor :</string>
+    <string name="address">Address</string>
+    <string name="add_address">Add Address</string>
+    <string name="map_view">Map View</string>
+    <string name="due_date">Due Date</string>
+    <string name="Date_of_Attempt">Date of Attempt</string>
+    <string name="recieved">Recieved</string>
+    <string name="due_time">Due Time</string>
+    <string name="priority">Priority</string>
+    <string name="court_service_inst">Instructions</string>
+    <string name="court_service_doc">Documents</string>
+    <string name="court_service_docval">DEFAULT AND POS</string>
+    <string name="court_service_btn">Submit Court POD</string>
+    <string name="court_pod_fee_advance">Fee Advance</string>
+    <string name="court_pod_waittime">Wait Time</string>
+    <string name="court_pod_getgpsbtn">Get Current GPS</string>
+    <string name="court_pod_attachmentsbtn">Attachments</string>
+    <string name="dilispread">Spread Record Diligence</string>
+    <string name="court_pod_submitbtn">Submit</string>
+    <string name="court_pod_historybtn">History</string>
+    <string name="alert_enter_attempt">Would you like to navigate to Enter Attempt?</string>
+    <string name="edit_search_library">Select From Library</string>
+    <string name="edit_takepic">Take Picture</string>
+    <string name="attachment_files">Attachment Files</string>
+    <string name="lockdescription">lockdescription</string>
+    <string name="txtview1selectlib">This app does not have acccess to\n\t\t\tyour photos or videos.</string>
+    <string name="txtview2selectlib">You can enable access in Privacy Settings.</string>
+    <string name="txtopeninmaps">Open in Maps</string>
+    <string name="txtaddtocontacts">Add to Contacts</string>
+    <string name="txtcopy">Copy</string>
+    <string name="btncompleteserve">Complete Serve</string>
+    <string name="btnenterattempt">Enter Attempt</string>
+    <string name="btndeleteattempt">Delete</string>
+    <string name="btnrecordercancel">Cancel</string>
+    <string name="signatureTitle">Signature</string>
+    <string name="signatureCancel">Cancel</string>
+
+    <!-- Strings related to Mapview -->
+    <string name="map_hybrid">Hybrid</string>
+    <string name="map_standard">Standard</string>
+    <string name="map_sateliite">Satellite</string>
+    <string name="attachments">Attachments</string>
+    <string name="attempt">Attempt</string>
+    <string name="enter_attempt">Enter Attempt</string>
+    <string name="enter_history">History</string>
+    <string name="enter_history_details">History Detail</string>
+    <string name="enter_history_list">History List</string>
+    <string name="btn_diligence_item">Select Diligence Item</string>
+    <string name="attempt_txt_Special">Special Report</string>
+    <string name="home">Home: </string>
+    <string name="dialog">Where do you want to add this picture?</string>
+    <string name="history">Do you want to remove this record?</string>
+    <string name="process_order_detail_name">Process Order Detail</string>
+    <string name="process_order_detail_servee">Servee</string>
+    <string name="process_order_detail_serveeval">Jesus Hernandez</string>
+    <string name="process_order_detail_priority">Rush</string>
+    <string name="process_order_detail_record_diligence_btn">Record Diligence</string>
+    <string name="process_order_detail_final_status_btn">Final Status</string>
+    <string name="process_order_detail_take_picture_btn">Take a Picture</string>
+    <string name="process_order_detail_prev_diligence_btn">Previous Diligence</string>
+
+    <!-- Strings related to finalStatus -->
+    <string name="actionbar_finalstatus">Final Status</string>
+    <string name="actionbar_route_tracker">Route Tracker</string>
+    <string name="physicaldescription_finalstatus">Physical Description</string>
+    <string name="radiomale_finalstatus">\tMale</string>
+    <string name="radiofemale_finalstatus"> \tFemale</string>
+    <string name="serviceaddress_finalstatus">Service Address</string>
+    <string name="getcurrentgps_finalstatus">Get Current GPS</string>
+    <string name="attachments_finalstatus">Attachments</string>
+    <string name="serveaudio_finalstatus">Serve with Audio</string>
+    <string name="finalsplater">Spread Final Status</string>
+    <string name="submit_finalstatus">Submit</string>
+    <string name="serveddate_finalstatus">Served Date</string>
+    <string name="servedtime_finalstatus">Served Time</string>
+    <string name="report_finalstatus">Report</string>
+    <string name="destingushingmarks_finalstatus">Distinguishing Marks</string>
+    <string name="Home_finalstatus">Home:</string>
+    <string name="mannerservice">Manner of Service</string>
+    <string name="Leftwith">Left With</string>
+    <string name="gps">GPS COORDINATES:</string>
+    <string name="relationship_finalstatus">Relationship</string>
+    <string name="serveeinfo_finalstatus">Servee Information</string>
+    <string name="name_finalstatus">Name</string>
+    <string name="entity_finalstatus">Entity</string>
+    <string name="Agentforservice_finalservice">Agent for Service</string>
+    <string name="direction">Direction</string>
+    <string name="type_route">Type</string>
+    <string name="status_route">Status</string>
+    <string name="location_route">Location</string>
+    <string name="jobs_route">Jobs</string>
+    <string name="scan_route">Scan</string>
+    <string name="location_scan">Location Scan</string>
+    <string name="job_scan">Job Scan</string>
+    <string name="scan_dialog">Select the type of scan</string>
+    <string name="agenttitle_finalservice">Agent Title</string>
+    <string name="inuniform_finalservice">In Uniform</string>
+    <string name="military_finalservice">Military</string>
+    <string name="police_finalservice">Police</string>
+
+    <!-- Strings related to voice recorder -->
+    <string name="deli_pod">Delivery POD</string>
+    <string name="pick_pod">Pickup POD</string>
+    <string name="pick_deli_pod">Pickup &amp; Delivery POD</string>
+    <string name="deli_rec">Received By</string>
+    <string name="deli_sign">Signature</string>
+    <string name="title_activity_exiter">Exiter</string>
+    <string name="select">Select</string>
+
+    <string name="action_1">Add Freight</string>
+    <string name="basic_action_2">View</string>
+    <string name="basic_del">Delete</string>
+    <string name="str_orange">#fe7b27</string>
+    <string name="str_green">#3cac69</string>
+    <string name="str_red">#FF4444</string>
+    <string name="str_yellow">#FFBB33</string>
+    <string name="str_sky_blue">#33B5E5</string>
+
+    //Special Instruction
+    <string name="Special_Instruction">Special Instruction</string>
+
+    //Dialog
+    <string name="Save">Save</string>
+    <string name="Edit">Edit</string>
+
+    //CheckBox
+    <style name="MyCheckbox" parent="@style/Widget.AppCompat.CompoundButton.CheckBox">
+        <item name="android:colorControlNormal">@android:color/white</item>
+        <item name="android:colorControlActivated">@android:color/black</item>
+    </style>
+
+    //Scanned_Workorder
+    <string name="No_Scanned_work">No work order available</string>
+    <string name="active">Active</string>
+    <string name="rush">Rush</string>
+    <string name="cancelled">Cancelled</string>
+    <string name="all">All</string>
+
+
+    <string name="basic_action_uncount">UnCount</string>
+    <string name="basic_action_1">Reject</string>
+    <string name="basic_action_3">Replace</string>
+    <string name="return_label">Return</string>
+    <string name="basic_action">Email</string>
+
+
+
+</resources>

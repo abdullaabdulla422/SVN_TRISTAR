@@ -1,0 +1,73 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 28
+    buildToolsVersion "27.0.3"
+    useLibrary 'org.apache.http.legacy'
+
+    defaultConfig {
+        applicationId "com.tristar.main"
+
+        minSdkVersion 16
+        //noinspection OldTargetApi
+        targetSdkVersion 28
+        multiDexEnabled true
+        versionCode 66
+        versionName "3.3.7"
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+    dexOptions {
+        javaMaxHeapSize "4g"
+    }
+
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+}
+
+repositories {
+    maven { url "https://jitpack.io" }
+}
+
+dependencies {
+
+    compile project(path: ':zbar')
+
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile project(':sanselanAndroid')
+    //noinspection GradleDependency
+    compile 'com.android.support:multidex:1.0.0'
+    //noinspection GradleDependency
+    compile 'com.android.support:appcompat-v7:27.1.1'
+    //noinspection GradleDependency
+    compile 'com.android.support:design:27.1.1'
+    //noinspection GradleDependency
+    compile 'com.google.android.gms:play-services-maps:7.3.0'
+    compile files('libs/ksoap2-android-assembly-3.1.1-jar-with-dependencies.1.jar')
+
+    compile files('libs/listviewanimations_lib-core-slh_3.1.0.jar')
+    compile files('libs/listviewanimations_lib-core_3.1.0.jar')
+    compile files('libs/listviewanimations_lib-manipulation_3.1.0.jar')
+
+    compile 'com.hudomju:swipe-to-dismiss-undo:1.0'
+    compile 'commons-logging:commons-logging-api:1.1'
+
+//    compile 'com.amazonaws:aws-android.util.Log:2.6.30'
+//    compile 'com.amazonaws:aws-android-sdk-logs:2.6.30'
+
+//    compile('org.apache.httpcomponents:httpmime:4.3.6') {
+//        exclude module: 'httpclient'
+//    }
+//    compile 'org.apache.httpcomponents:httpclient-android:4.3.5'
+//    compile ('com.coinbase.android:coinbase-android-sdk:1.0.1'){
+//        exclude group: 'org.apache.httpcomponents', module:'httpclient'
+//    }
+}

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="320dp"
+    android:layout_height="320dp"
+    android:background="@color/whitecolor"
+    android:orientation="vertical"
+    tools:ignore="Overdraw">
+
+    <ImageView
+        android:id="@+id/close"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="right"
+        android:layout_margin="10dp"
+        android:background="@drawable/cancel1"
+        tools:ignore="ContentDescription,RtlHardcoded" />
+
+    <GridView
+        android:id="@+id/lst_image_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="60dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/attach_transparent"
+        android:horizontalSpacing="40dp"
+        android:verticalSpacing="40dp" >
+    </GridView>
+
+</LinearLayout>

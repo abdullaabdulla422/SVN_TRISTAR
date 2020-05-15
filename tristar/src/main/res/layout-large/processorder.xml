@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parent_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ph_logo"
+    android:orientation="vertical"
+    android:weightSum="100"
+    tools:ignore="Overdraw">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/whitecolor"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="6dp"
+        android:weightSum="5">
+
+        <LinearLayout
+            android:id="@+id/reset_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:background="@color/whitecolor"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageButtonbackpro"
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|left"
+                android:background="@android:color/white"
+                android:src="@drawable/imagesleft"
+                android:visibility="gone"
+                tools:ignore="ContentDescription,RtlHardcoded" />
+
+            <TextView
+                android:id="@+id/txt_logout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="center|left"
+                android:text="@string/logout"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:visibility="gone"
+                tools:ignore="RtlHardcoded" />
+
+            <TextView
+                android:id="@+id/txt_cancel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="center|left"
+                android:text="@string/cancel"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:visibility="gone"
+                tools:ignore="RtlHardcoded" />
+
+            <TextView
+                android:id="@+id/txt_reset"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="center|left"
+                android:text="@string/reset"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                tools:ignore="RtlHardcoded" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/titlet_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/whitecolor"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="5"
+                android:gravity="center"
+                android:text="@string/process_orders"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/filter_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:background="@color/whitecolor"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txt_sync"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="center|right"
+                android:text="@string/sync"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:visibility="gone"
+                tools:ignore="RtlHardcoded" />
+
+            <TextView
+                android:id="@+id/txt_mylist"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="center|right"
+                android:text="@string/mylist"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                tools:ignore="RtlHardcoded" />
+
+            <TextView
+                android:id="@+id/txt_filter"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="center|right"
+                android:text="@string/filter"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:visibility="gone"
+                tools:ignore="RtlHardcoded" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/sortby"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/whitecolor"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight=".78"
+            android:gravity="left"
+            android:text="Sort by:"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText,RtlHardcoded" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight=".21"
+            android:weightSum="1">
+
+            <TextView
+                android:id="@+id/txtworkorder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight=".3"
+                android:gravity="center"
+                android:text="Workorder"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText,RtlHardcoded" />
+
+
+            <TextView
+                android:id="@+id/txtserlab"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight=".7"
+                android:gravity="center|right"
+                android:text="Servee"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginRight="5dp"
+                tools:ignore="HardcodedText,RtlHardcoded" />
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/txtsortDuedate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_marginRight="5dp"
+                android:text="Due date"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText,RtlHardcoded" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/whitecolor"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="5dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center|left"
+            android:text="Filter by:"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText,RtlHardcoded" />
+
+        <TextView
+            android:id="@+id/milestone_txt_filter"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="5"
+            android:gravity="center"
+            android:text="All"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
+
+        <ImageView
+            android:id="@+id/milestone_img_filter"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="end"
+            android:paddingLeft="20dp"
+            android:src="@drawable/drop_down"
+            tools:ignore="HardcodedText,RtlHardcoded" />
+
+
+    </LinearLayout>
+
+
+    <ViewFlipper
+        android:id="@+id/viewfliper"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="100">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <LinearLayout
+                android:id="@+id/lin_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/white"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:background="@color/blackcolor">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp">
+
+                        <EditText
+                            android:id="@+id/edt_workordersearch"
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:layout_gravity="top"
+                            android:background="@drawable/roundedcorner"
+                            android:ems="10"
+                            android:focusableInTouchMode="true"
+                            android:gravity="left|top"
+                            android:hint="Search Workorder"
+                            android:paddingLeft="5dp"
+                            android:paddingTop="5dp"
+                            android:singleLine="true"
+                            tools:ignore="RtlHardcoded,RtlSymmetry" />
+
+                        <ImageView
+                            android:id="@+id/clear_search"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_gravity="right"
+                            android:layout_margin="5dp"
+                            android:src="@drawable/crossicon" />
+                    </FrameLayout>
+                </LinearLayout>
+
+
+                <com.nhaarman.listviewanimations.itemmanipulation.DynamicListView
+                    android:id="@+id/listView_Processorder"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="90"
+                    android:background="@drawable/ph_logo"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="5dp"
+                    tools:ignore="InefficientWeight,RtlHardcoded" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/milestone_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/whitecolor"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+
+                <ListView
+                    android:id="@+id/filter_listView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:listitem="@layout/child_milestone" />
+
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/lin_mapview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="37dp"
+                android:background="@android:color/white"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_hydrid"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="@string/map_hybrid"
+                    android:textColor="@android:color/darker_gray"
+                    tools:ignore="ButtonStyle" />
+
+                <Button
+                    android:id="@+id/btn_satellite"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="@string/map_sateliite"
+                    android:textColor="@android:color/darker_gray"
+                    tools:ignore="ButtonStyle" />
+
+                <Button
+                    android:id="@+id/btn_standard"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="@string/map_standard"
+                    android:textColor="@android:color/darker_gray"
+                    tools:ignore="ButtonStyle" />
+            </LinearLayout>
+
+            <fragment
+                android:id="@+id/map"
+                android:name="com.google.android.gms.maps.SupportMapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+    </ViewFlipper>
+
+    <include
+        layout="@layout/menu_courtservice"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

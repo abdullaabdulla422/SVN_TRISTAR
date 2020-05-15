@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="theme_loginpage">#eeeeee</color>
+    <color name="hintcolorgray">#EBEBE4</color>
+    <color name="attacheditbg">#dcdcdc</color>
+    <color name="graycolor">#f4f4f4</color> 
+    <color name="blackcolor">#000000</color>
+    <color name="whitecolor">#FFFFFF</color>
+	<color name="action_header">#EDEDED</color>
+	<color name="blue_text">#007AFF</color>
+	<color name="green_bg">#2DBC0D</color>
+	<color name="red_bg">#D23206</color>
+
+	<color name="btn_gray">#e3e3e3</color>
+
+    <color name = "attach_transparent">#30FFFFFF</color>
+
+    <color name="actionbar_opacity">#33000000</color>
+    <color name="primary">#3F51B5</color>
+    <color name="primary_dark">#303F9F</color>
+    <color name="accent">#FF5252</color>
+    <color name="primary_text">#212121</color>
+    <color name="secondary_text">#727272</color>
+
+    <color name="light_orange">#DC7633</color>
+    <color name="purple">#9B59B6</color>
+    <color name="red">#FF0000</color>
+
+
+</resources>

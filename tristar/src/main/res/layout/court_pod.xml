@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/ph_logo"
+    android:orientation="vertical"
+    tools:ignore="Overdraw">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/whitecolor"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:paddingRight="5dp"
+        tools:ignore="RtlHardcoded,RtlSymmetry">
+
+        <ImageView
+            android:id="@+id/imageButtonback"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|left"
+            android:src="@drawable/imagesleft"
+            tools:ignore="ContentDescription,RtlHardcoded" />
+
+        <TextView
+            android:id="@+id/txt_back"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:gravity="center|left"
+            android:text="@string/back"
+            android:textColor="@color/blackcolor"
+            android:textSize="16sp"
+            tools:ignore="RtlHardcoded" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/court_pod"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="60dp"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/lbl_category"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:background="@color/whitecolor"
+                android:gravity="center"
+                android:text="{}"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:text="@string/date"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/whitecolor" />
+
+                <Button
+                    android:id="@+id/btn_date"
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/buttonbg"
+                    android:text="@string/val_date" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@android:color/darker_gray" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:text="@string/time"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/whitecolor" />
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal" >
+
+                    <Button
+                        android:id="@+id/btn_time"
+                        android:layout_width="0dp"
+                        android:layout_height="35dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/buttonbg"
+                        android:text="@string/val_time"
+                        tools:ignore="RtlHardcoded" />
+
+                    <CheckBox
+                        android:id="@+id/chk_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:gravity="right|center"
+                        tools:ignore="RtlHardcoded" />
+                </TableRow>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@android:color/darker_gray" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:text="@string/comments"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/whitecolor" />
+
+                <EditText
+                    android:id="@+id/edt_court_comment"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/roundedcorner"
+                    android:cursorVisible="false"
+                    android:ems="10"
+                    android:gravity="top|left"
+                    android:hint=""
+                    android:maxLength="300"
+                    android:inputType="textCapSentences"
+                    android:scrollbars="vertical"
+                    android:singleLine="false"
+                    tools:ignore="RtlHardcoded">
+                </EditText>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@android:color/darker_gray" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:text="@string/court_pod_fee_advance"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/whitecolor" />
+
+                <EditText
+                    android:id="@+id/edt_court_fee"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/roundedcorner"
+                    android:ems="10"
+                    android:gravity="left|center_vertical"
+                    android:hint="" 
+                    android:inputType="numberDecimal"
+                    android:singleLine="true"
+                    tools:ignore="RtlHardcoded">
+                </EditText>
+
+                <View
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@android:color/darker_gray" />
+
+                <TextView
+                    android:visibility="gone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:text="Check #"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/whitecolor" />
+
+                <EditText
+                    android:visibility="gone"
+                    android:id="@+id/edt_check_no"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/roundedcorner"
+                    android:ems="10"
+                    android:gravity="left|center_vertical"
+                    android:hint=""
+                    android:inputType="numberDecimal"
+                    android:singleLine="true"
+                    tools:ignore="RtlHardcoded">
+                </EditText>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@android:color/darker_gray" />
+
+                <include
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="100dp"
+                    layout="@layout/court_pod_include" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
